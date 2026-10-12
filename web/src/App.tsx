@@ -305,8 +305,7 @@ function Hero({ paused }: { paused: boolean }) {
           />
         </div>
         <p className="hero-links">
-          <a href={LINKS.findings}>Read the findings</a> · <a href={LINKS.plan}>Pre-registered plan</a> ·{' '}
-          <a href={LINKS.repo}>Code</a>
+          <a href={LINKS.findings}>Read the findings</a> · <a href={LINKS.repo}>Code</a>
         </p>
       </div>
     </header>
