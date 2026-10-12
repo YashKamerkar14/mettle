@@ -1,0 +1,28 @@
+{
+  "runtimeVersion": "0.2.86",
+  "settings": {
+    "temperature": 1,
+    "top_p": 0.00001,
+    "max_tokens": 16,
+    "top_logprobs": 2
+  },
+  "builds": [
+    "SmolLM2-360M-Instruct-q0f16-MLC",
+    "SmolLM2-360M-Instruct-q4f16_1-MLC"
+  ],
+  "device": {
+    "hasF16": true,
+    "isFallbackAdapter": false,
+    "vendor": "nvidia",
+    "architecture": "lovelace",
+    "device": "",
+    "description": "",
+    "browser": "Chrome 154",
+    "os": "Windows",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "webgpu": true
+  },
+  "questions": "questions/pilot.v1.jsonl",
+  "repeat": 1,
+  "startedAt": "2026-10-12T08:29:42.219Z"
+}

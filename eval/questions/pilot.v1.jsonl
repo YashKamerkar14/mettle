@@ -25,7 +25,7 @@
 {"id": "p1-antonym-0024", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"wrong\"? Answer with one word.", "answers": ["right", "correct"], "scorer": "phrase"}
 {"id": "p1-antonym-0025", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"freeze\"? Answer with one word.", "answers": ["melt", "boil", "thaw"], "scorer": "phrase"}
 {"id": "p1-antonym-0026", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"give\"? Answer with one word.", "answers": ["take", "receive"], "scorer": "phrase"}
-{"id": "p1-antonym-0027", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"fat\"? Answer with one word.", "answers": ["thin", "skinny", "slim"], "scorer": "phrase"}
+{"id": "p1-antonym-0027", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"fat\"? Answer with one word.", "answers": ["thin", "skinny", "slim", "lean"], "scorer": "phrase"}
 {"id": "p1-antonym-0028", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"ancient\"? Answer with one word.", "answers": ["modern", "new"], "scorer": "phrase"}
 {"id": "p1-antonym-0029", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"before\"? Answer with one word.", "answers": ["after"], "scorer": "phrase"}
 {"id": "p1-antonym-0030", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"buy\"? Answer with one word.", "answers": ["sell"], "scorer": "phrase"}

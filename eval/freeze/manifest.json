@@ -1,0 +1,39 @@
+{
+  "note": "SHA-256 of the inputs the frozen analysis plan depends on. Code is pinned by the git tag analysis-plan-v1-frozen.",
+  "webllm": "0.2.86",
+  "questions": {
+    "path": "eval/questions/questions.v1.jsonl",
+    "sha256": "95ded352b61b2d98cb1bffed15d9fc7f568febfc10ffe07b3279df6d0f038be8"
+  },
+  "pilot": {
+    "path": "eval/questions/pilot.v1.jsonl",
+    "sha256": "e6ac864d1d08d3cfc3068f9f5856884597cb057c93c5a08db26c81ed6db99ad1"
+  },
+  "models": {
+    "SmolLM2-360M-Instruct-q4f16_1-MLC": {
+      "tensorCache": "55a84311c4516c04218947b0633a5bb9365f9873ecdb69757f5e308ef87c515b",
+      "tensorCacheUrl": "https://huggingface.co/mlc-ai/SmolLM2-360M-Instruct-q4f16_1-MLC/resolve/main/tensor-cache.json",
+      "modelLib": "a25e1a9b963ed404b6cde59c03682effd073d6adf77b1858b22b342763936043",
+      "modelLibUrl": "https://raw.githubusercontent.com/mlc-ai/binary-mlc-llm-libs/main/web-llm-models/v0_2_86/base/SmolLM2-360M-Instruct-q4f16_1_cs1k-webgpu.wasm"
+    },
+    "SmolLM2-360M-Instruct-q4f32_1-MLC": {
+      "tensorCache": "82bbb6b94d83a699a1f530ddee0831a551ef14aaa85b7b1f9e8676169ccdadc9",
+      "tensorCacheUrl": "https://huggingface.co/mlc-ai/SmolLM2-360M-Instruct-q4f32_1-MLC/resolve/main/tensor-cache.json",
+      "modelLib": "e085ce370322c134b47e8b2817b0ce15097642c0e2ed9ebbeeb3b682a0aae020",
+      "modelLibUrl": "https://raw.githubusercontent.com/mlc-ai/binary-mlc-llm-libs/main/web-llm-models/v0_2_86/base/SmolLM2-360M-Instruct-q4f32_1_cs1k-webgpu.wasm"
+    },
+    "SmolLM2-360M-Instruct-q0f16-MLC": {
+      "tensorCache": "66598266d3f3759e8cc01e0f0a730951717b6b78ee9d2864854f36530d670aa2",
+      "tensorCacheUrl": "https://huggingface.co/mlc-ai/SmolLM2-360M-Instruct-q0f16-MLC/resolve/main/tensor-cache.json",
+      "modelLib": "8c36df447e542ed85e4ad955ab91e09b62a836eb34e7bf822eefb9ad9b03f3da",
+      "modelLibUrl": "https://raw.githubusercontent.com/mlc-ai/binary-mlc-llm-libs/main/web-llm-models/v0_2_86/base/SmolLM2-360M-Instruct-q0f16_cs1k-webgpu.wasm"
+    },
+    "SmolLM2-360M-Instruct-q0f32-MLC": {
+      "tensorCache": "80f36c73db7e810834555b658e481733ea9e53327d7f0cac0615d9eb3d9873db",
+      "tensorCacheUrl": "https://huggingface.co/mlc-ai/SmolLM2-360M-Instruct-q0f32-MLC/resolve/main/tensor-cache.json",
+      "modelLib": "189c52dc08660657e9ef93409b017800133c2746562f94db97e102004e3e52e1",
+      "modelLibUrl": "https://raw.githubusercontent.com/mlc-ai/binary-mlc-llm-libs/main/web-llm-models/v0_2_86/base/SmolLM2-360M-Instruct-q0f32_cs1k-webgpu.wasm"
+    }
+  },
+  "recordedAt": "2026-10-12T08:34:19.113Z"
+}

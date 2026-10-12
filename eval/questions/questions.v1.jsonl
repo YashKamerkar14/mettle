@@ -203,7 +203,7 @@
 {"id": "q1-capital-0202", "category": "capital", "subtype": "capital", "prompt": "What is the capital of Armenia? Answer with only the city name.", "answers": ["Yerevan"], "scorer": "phrase"}
 {"id": "q1-capital-0203", "category": "capital", "subtype": "capital", "prompt": "What is the capital of Hungary? Answer with only the city name.", "answers": ["Budapest"], "scorer": "phrase"}
 {"id": "q1-capital-0204", "category": "capital", "subtype": "capital", "prompt": "What is the capital of Rwanda? Answer with only the city name.", "answers": ["Kigali"], "scorer": "phrase"}
-{"id": "q1-capital-0205", "category": "capital", "subtype": "capital", "prompt": "What is the capital of Kazakhstan? Answer with only the city name.", "answers": ["Astana"], "scorer": "phrase"}
+{"id": "q1-capital-0205", "category": "capital", "subtype": "capital", "prompt": "What is the capital of Kazakhstan? Answer with only the city name.", "answers": ["Astana", "Nur-Sultan"], "scorer": "phrase"}
 {"id": "q1-capital-0206", "category": "capital", "subtype": "capital", "prompt": "What is the capital of Croatia? Answer with only the city name.", "answers": ["Zagreb"], "scorer": "phrase"}
 {"id": "q1-capital-0207", "category": "capital", "subtype": "capital", "prompt": "What is the capital of Bulgaria? Answer with only the city name.", "answers": ["Sofia"], "scorer": "phrase"}
 {"id": "q1-capital-0208", "category": "capital", "subtype": "capital", "prompt": "What is the capital of Japan? Answer with only the city name.", "answers": ["Tokyo"], "scorer": "phrase"}
@@ -299,7 +299,7 @@
 {"id": "q1-capital-0298", "category": "capital", "subtype": "capital", "prompt": "What is the capital of Fiji? Answer with only the city name.", "answers": ["Suva"], "scorer": "phrase"}
 {"id": "q1-capital-0299", "category": "capital", "subtype": "capital", "prompt": "What is the capital of Botswana? Answer with only the city name.", "answers": ["Gaborone"], "scorer": "phrase"}
 {"id": "q1-antonym-0300", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"odd\"? Answer with one word.", "answers": ["even"], "scorer": "phrase"}
-{"id": "q1-antonym-0301", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"sweet\"? Answer with one word.", "answers": ["sour", "bitter", "salty", "savory"], "scorer": "phrase"}
+{"id": "q1-antonym-0301", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"sweet\"? Answer with one word.", "answers": ["sour", "bitter"], "scorer": "phrase"}
 {"id": "q1-antonym-0302", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"full\"? Answer with one word.", "answers": ["empty"], "scorer": "phrase"}
 {"id": "q1-antonym-0303", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"presence\"? Answer with one word.", "answers": ["absence"], "scorer": "phrase"}
 {"id": "q1-antonym-0304", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"guilty\"? Answer with one word.", "answers": ["innocent"], "scorer": "phrase"}
@@ -308,10 +308,10 @@
 {"id": "q1-antonym-0307", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"agree\"? Answer with one word.", "answers": ["disagree"], "scorer": "phrase"}
 {"id": "q1-antonym-0308", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"clean\"? Answer with one word.", "answers": ["dirty"], "scorer": "phrase"}
 {"id": "q1-antonym-0309", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"known\"? Answer with one word.", "answers": ["unknown"], "scorer": "phrase"}
-{"id": "q1-antonym-0310", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"tight\"? Answer with one word.", "answers": ["loose"], "scorer": "phrase"}
+{"id": "q1-antonym-0310", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"tight\"? Answer with one word.", "answers": ["loose", "slack"], "scorer": "phrase"}
 {"id": "q1-antonym-0311", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"safe\"? Answer with one word.", "answers": ["dangerous", "unsafe"], "scorer": "phrase"}
 {"id": "q1-antonym-0312", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"win\"? Answer with one word.", "answers": ["lose"], "scorer": "phrase"}
-{"id": "q1-antonym-0313", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"future\"? Answer with one word.", "answers": ["past"], "scorer": "phrase"}
+{"id": "q1-antonym-0313", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"future\"? Answer with one word.", "answers": ["past", "present"], "scorer": "phrase"}
 {"id": "q1-antonym-0314", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"awake\"? Answer with one word.", "answers": ["asleep"], "scorer": "phrase"}
 {"id": "q1-antonym-0315", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"smooth\"? Answer with one word.", "answers": ["rough", "bumpy"], "scorer": "phrase"}
 {"id": "q1-antonym-0316", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"correct\"? Answer with one word.", "answers": ["incorrect", "wrong"], "scorer": "phrase"}
@@ -325,7 +325,7 @@
 {"id": "q1-antonym-0324", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"accept\"? Answer with one word.", "answers": ["reject", "refuse", "decline"], "scorer": "phrase"}
 {"id": "q1-antonym-0325", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"wide\"? Answer with one word.", "answers": ["narrow"], "scorer": "phrase"}
 {"id": "q1-antonym-0326", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"fast\"? Answer with one word.", "answers": ["slow"], "scorer": "phrase"}
-{"id": "q1-antonym-0327", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"simple\"? Answer with one word.", "answers": ["complex", "complicated", "difficult"], "scorer": "phrase"}
+{"id": "q1-antonym-0327", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"simple\"? Answer with one word.", "answers": ["complex", "complicated", "difficult", "hard"], "scorer": "phrase"}
 {"id": "q1-antonym-0328", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"male\"? Answer with one word.", "answers": ["female"], "scorer": "phrase"}
 {"id": "q1-antonym-0329", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"maximum\"? Answer with one word.", "answers": ["minimum"], "scorer": "phrase"}
 {"id": "q1-antonym-0330", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"son\"? Answer with one word.", "answers": ["daughter"], "scorer": "phrase"}
@@ -333,12 +333,12 @@
 {"id": "q1-antonym-0332", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"vertical\"? Answer with one word.", "answers": ["horizontal"], "scorer": "phrase"}
 {"id": "q1-antonym-0333", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"plural\"? Answer with one word.", "answers": ["singular"], "scorer": "phrase"}
 {"id": "q1-antonym-0334", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"borrow\"? Answer with one word.", "answers": ["lend"], "scorer": "phrase"}
-{"id": "q1-antonym-0335", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"include\"? Answer with one word.", "answers": ["exclude"], "scorer": "phrase"}
+{"id": "q1-antonym-0335", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"include\"? Answer with one word.", "answers": ["exclude", "omit"], "scorer": "phrase"}
 {"id": "q1-antonym-0336", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"east\"? Answer with one word.", "answers": ["west"], "scorer": "phrase"}
 {"id": "q1-antonym-0337", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"wet\"? Answer with one word.", "answers": ["dry"], "scorer": "phrase"}
 {"id": "q1-antonym-0338", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"floor\"? Answer with one word.", "answers": ["ceiling"], "scorer": "phrase"}
 {"id": "q1-antonym-0339", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"young\"? Answer with one word.", "answers": ["old"], "scorer": "phrase"}
-{"id": "q1-antonym-0340", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"brave\"? Answer with one word.", "answers": ["cowardly", "scared", "afraid", "fearful", "timid"], "scorer": "phrase"}
+{"id": "q1-antonym-0340", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"brave\"? Answer with one word.", "answers": ["cowardly", "coward", "scared", "afraid", "fearful", "timid"], "scorer": "phrase"}
 {"id": "q1-antonym-0341", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"open\"? Answer with one word.", "answers": ["closed", "close", "shut"], "scorer": "phrase"}
 {"id": "q1-antonym-0342", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"attack\"? Answer with one word.", "answers": ["defend", "defense", "defence"], "scorer": "phrase"}
 {"id": "q1-antonym-0343", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"first\"? Answer with one word.", "answers": ["last"], "scorer": "phrase"}
@@ -367,14 +367,14 @@
 {"id": "q1-antonym-0366", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"success\"? Answer with one word.", "answers": ["failure"], "scorer": "phrase"}
 {"id": "q1-antonym-0367", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"thick\"? Answer with one word.", "answers": ["thin"], "scorer": "phrase"}
 {"id": "q1-antonym-0368", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"heavy\"? Answer with one word.", "answers": ["light"], "scorer": "phrase"}
-{"id": "q1-antonym-0369", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"laugh\"? Answer with one word.", "answers": ["cry"], "scorer": "phrase"}
+{"id": "q1-antonym-0369", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"laugh\"? Answer with one word.", "answers": ["cry", "weep"], "scorer": "phrase"}
 {"id": "q1-antonym-0370", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"dark\"? Answer with one word.", "answers": ["light", "bright"], "scorer": "phrase"}
 {"id": "q1-antonym-0371", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"appear\"? Answer with one word.", "answers": ["disappear", "vanish"], "scorer": "phrase"}
 {"id": "q1-antonym-0372", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"hard\"? Answer with one word.", "answers": ["soft", "easy"], "scorer": "phrase"}
-{"id": "q1-antonym-0373", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"rise\"? Answer with one word.", "answers": ["fall", "sink", "set"], "scorer": "phrase"}
+{"id": "q1-antonym-0373", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"rise\"? Answer with one word.", "answers": ["fall", "sink", "set", "descend", "drop", "decline"], "scorer": "phrase"}
 {"id": "q1-antonym-0374", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"boy\"? Answer with one word.", "answers": ["girl"], "scorer": "phrase"}
-{"id": "q1-antonym-0375", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"hot\"? Answer with one word.", "answers": ["cold"], "scorer": "phrase"}
-{"id": "q1-antonym-0376", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"increase\"? Answer with one word.", "answers": ["decrease", "reduce"], "scorer": "phrase"}
+{"id": "q1-antonym-0375", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"hot\"? Answer with one word.", "answers": ["cold", "cool"], "scorer": "phrase"}
+{"id": "q1-antonym-0376", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"increase\"? Answer with one word.", "answers": ["decrease", "reduce", "lower"], "scorer": "phrase"}
 {"id": "q1-antonym-0377", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"noisy\"? Answer with one word.", "answers": ["quiet", "silent"], "scorer": "phrase"}
 {"id": "q1-antonym-0378", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"above\"? Answer with one word.", "answers": ["below", "beneath", "under"], "scorer": "phrase"}
 {"id": "q1-antonym-0379", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"far\"? Answer with one word.", "answers": ["near", "close"], "scorer": "phrase"}
@@ -387,15 +387,15 @@
 {"id": "q1-antonym-0386", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"strong\"? Answer with one word.", "answers": ["weak"], "scorer": "phrase"}
 {"id": "q1-antonym-0387", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"private\"? Answer with one word.", "answers": ["public"], "scorer": "phrase"}
 {"id": "q1-antonym-0388", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"whisper\"? Answer with one word.", "answers": ["shout", "yell", "scream"], "scorer": "phrase"}
-{"id": "q1-antonym-0389", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"begin\"? Answer with one word.", "answers": ["end", "finish"], "scorer": "phrase"}
+{"id": "q1-antonym-0389", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"begin\"? Answer with one word.", "answers": ["end", "finish", "stop", "conclude"], "scorer": "phrase"}
 {"id": "q1-antonym-0390", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"inside\"? Answer with one word.", "answers": ["outside"], "scorer": "phrase"}
 {"id": "q1-antonym-0391", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"major\"? Answer with one word.", "answers": ["minor"], "scorer": "phrase"}
 {"id": "q1-antonym-0392", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"king\"? Answer with one word.", "answers": ["queen"], "scorer": "phrase"}
 {"id": "q1-antonym-0393", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"early\"? Answer with one word.", "answers": ["late"], "scorer": "phrase"}
-{"id": "q1-antonym-0394", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"generous\"? Answer with one word.", "answers": ["stingy", "selfish", "mean"], "scorer": "phrase"}
+{"id": "q1-antonym-0394", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"generous\"? Answer with one word.", "answers": ["stingy", "selfish", "mean", "greedy", "miserly"], "scorer": "phrase"}
 {"id": "q1-antonym-0395", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"remember\"? Answer with one word.", "answers": ["forget"], "scorer": "phrase"}
 {"id": "q1-antonym-0396", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"possible\"? Answer with one word.", "answers": ["impossible"], "scorer": "phrase"}
-{"id": "q1-antonym-0397", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"lost\"? Answer with one word.", "answers": ["found"], "scorer": "phrase"}
+{"id": "q1-antonym-0397", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"lost\"? Answer with one word.", "answers": ["found", "won"], "scorer": "phrase"}
 {"id": "q1-antonym-0398", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"love\"? Answer with one word.", "answers": ["hate"], "scorer": "phrase"}
 {"id": "q1-antonym-0399", "category": "antonym", "subtype": "antonym", "prompt": "What is the opposite of the word \"loud\"? Answer with one word.", "answers": ["quiet", "soft", "silent"], "scorer": "phrase"}
 {"id": "q1-sentiment-0400", "category": "sentiment", "subtype": "positive", "prompt": "Is this review positive or negative?\nReview: \"The game was wonderful.\"\nAnswer with only one word: positive or negative.", "answers": ["positive"], "scorer": "label", "labels": ["positive", "negative"]}

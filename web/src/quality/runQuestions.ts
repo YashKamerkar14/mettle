@@ -6,8 +6,15 @@
 
 import type { WebWorkerMLCEngine } from '@mlc-ai/web-llm'
 
+// Greedy decoding, but not via temperature 0: WebLLM clamps temperature to
+// 1e-6, which makes the softmax one-hot, so every log-prob margin comes out
+// infinite. Instead sample at temperature 1 with top_p at its 1e-5 floor. The
+// top token always has probability >= 1/49152 (about 2e-5) > 1e-5, so the
+// nucleus holds exactly one token (the argmax), and log-probs reflect the
+// model's real distribution.
 export const QUALITY_SETTINGS = {
-  temperature: 0,
+  temperature: 1,
+  top_p: 1e-5,
   max_tokens: 16,
   top_logprobs: 2,
 } as const
@@ -26,7 +33,7 @@ export interface Answer {
   tokens: string[]
   /**
    * log p(top-1) - log p(top-2) at each step: how close the greedy choice was.
-   * null when only one candidate was returned (JSON has no Infinity).
+   * null when the gap is not finite (JSON has no Infinity).
    */
   margins: (number | null)[]
   finishReason: string | null
@@ -41,6 +48,7 @@ export async function answerQuestion(engine: WebWorkerMLCEngine, q: Question): P
   const reply = await engine.chat.completions.create({
     messages: [{ role: 'user', content: q.prompt }],
     temperature: QUALITY_SETTINGS.temperature,
+    top_p: QUALITY_SETTINGS.top_p,
     max_tokens: q.max_tokens ?? QUALITY_SETTINGS.max_tokens,
     logprobs: true,
     top_logprobs: QUALITY_SETTINGS.top_logprobs,
@@ -55,7 +63,8 @@ export async function answerQuestion(engine: WebWorkerMLCEngine, q: Question): P
     tokens: steps.map((s) => s.token),
     margins: steps.map((s) => {
       const [first, second] = s.top_logprobs
-      return first && second ? first.logprob - second.logprob : null
+      const gap = first && second ? first.logprob - second.logprob : Number.NaN
+      return Number.isFinite(gap) ? gap : null
     }),
     finishReason: choice.finish_reason,
     completionTokens: reply.usage?.completion_tokens ?? steps.length,

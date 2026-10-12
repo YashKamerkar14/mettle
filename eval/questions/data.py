@@ -3,7 +3,15 @@
 Only unambiguous items are included: countries whose capital is disputed,
 split, or changing (Bolivia, South Africa, Netherlands, Israel, Sri Lanka,
 Cote d'Ivoire, Tanzania, Indonesia) are left out, as are countries whose
-capital shares the country's name (Mexico City, Kuwait City, ...).
+capital shares the country's name (Mexico City, Kuwait City, ...). Yemen
+(contested since 2014) slipped through but only lands in the pilot set.
+
+Answer-key policy (reviewed 2026-10-12, before any main-set outputs existed):
+- Capitals: any official name of the capital in use since 2015, plus common
+  English spellings. Former capitals (e.g. Yangon) are not accepted.
+- Antonyms: the direct antonyms of the word's most common sense, plus common
+  near-synonyms of those antonyms. Merely related words are not accepted.
+Changing accepted answers does not change which items are generated.
 """
 
 # country -> accepted answers (first is canonical). Accents are stripped
@@ -76,7 +84,7 @@ CAPITALS: dict[str, list[str]] = {
     "Malaysia": ["Kuala Lumpur"],
     "the Philippines": ["Manila"],
     "Mongolia": ["Ulaanbaatar", "Ulan Bator"],
-    "Kazakhstan": ["Astana"],
+    "Kazakhstan": ["Astana", "Nur-Sultan"],
     "Uzbekistan": ["Tashkent"],
     "Kyrgyzstan": ["Bishkek"],
     "Tajikistan": ["Dushanbe"],
@@ -140,7 +148,7 @@ CAPITALS: dict[str, list[str]] = {
 
 # word -> accepted opposites (first is canonical).
 ANTONYMS: dict[str, list[str]] = {
-    "hot": ["cold"],
+    "hot": ["cold", "cool"],
     "big": ["small", "little", "tiny"],
     "tall": ["short"],
     "fast": ["slow"],
@@ -166,7 +174,7 @@ ANTONYMS: dict[str, list[str]] = {
     "push": ["pull"],
     "give": ["take", "receive"],
     "enter": ["exit", "leave"],
-    "begin": ["end", "finish"],
+    "begin": ["end", "finish", "stop", "conclude"],
     "always": ["never"],
     "before": ["after"],
     "inside": ["outside"],
@@ -178,23 +186,23 @@ ANTONYMS: dict[str, list[str]] = {
     "day": ["night"],
     "love": ["hate"],
     "friend": ["enemy", "foe"],
-    "brave": ["cowardly", "scared", "afraid", "fearful", "timid"],
+    "brave": ["cowardly", "coward", "scared", "afraid", "fearful", "timid"],
     "cheap": ["expensive", "costly"],
     "asleep": ["awake"],
     "accept": ["reject", "refuse", "decline"],
     "agree": ["disagree"],
     "allow": ["forbid", "prohibit", "deny", "disallow", "ban"],
-    "increase": ["decrease", "reduce"],
+    "increase": ["decrease", "reduce", "lower"],
     "maximum": ["minimum"],
     "question": ["answer"],
     "remember": ["forget"],
     "sharp": ["dull", "blunt"],
     "smooth": ["rough", "bumpy"],
-    "tight": ["loose"],
+    "tight": ["loose", "slack"],
     "borrow": ["lend"],
     "safe": ["dangerous", "unsafe"],
     "polite": ["rude", "impolite"],
-    "generous": ["stingy", "selfish", "mean"],
+    "generous": ["stingy", "selfish", "mean", "greedy", "miserly"],
     "correct": ["incorrect", "wrong"],
     "visible": ["invisible"],
     "possible": ["impossible"],
@@ -222,20 +230,20 @@ ANTONYMS: dict[str, list[str]] = {
     "uncle": ["aunt"],
     "son": ["daughter"],
     "float": ["sink"],
-    "laugh": ["cry"],
+    "laugh": ["cry", "weep"],
     "whisper": ["shout", "yell", "scream"],
     "frown": ["smile"],
     "young": ["old"],
     "first": ["last"],
     "top": ["bottom"],
-    "future": ["past"],
+    "future": ["past", "present"],
     "private": ["public"],
     "vertical": ["horizontal"],
-    "include": ["exclude"],
+    "include": ["exclude", "omit"],
     "appear": ["disappear", "vanish"],
     "attack": ["defend", "defense", "defence"],
     "temporary": ["permanent"],
-    "simple": ["complex", "complicated", "difficult"],
+    "simple": ["complex", "complicated", "difficult", "hard"],
     "guilty": ["innocent"],
     "wild": ["tame", "domestic", "domesticated"],
     "odd": ["even"],
@@ -245,16 +253,16 @@ ANTONYMS: dict[str, list[str]] = {
     "dark": ["light", "bright"],
     "noisy": ["quiet", "silent"],
     "arrive": ["depart", "leave"],
-    "lost": ["found"],
-    "sweet": ["sour", "bitter", "salty", "savory"],
+    "lost": ["found", "won"],
+    "sweet": ["sour", "bitter"],
     "hard": ["soft", "easy"],
     "minimum": ["maximum"],
-    "rise": ["fall", "sink", "set"],
+    "rise": ["fall", "sink", "set", "descend", "drop", "decline"],
     "freeze": ["melt", "boil", "thaw"],
     "far": ["near", "close"],
     "wrong": ["right", "correct"],
     "awake": ["asleep"],
-    "fat": ["thin", "skinny", "slim"],
+    "fat": ["thin", "skinny", "slim", "lean"],
 }
 
 REVIEW_ITEMS = [
