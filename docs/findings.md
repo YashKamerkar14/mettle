@@ -28,7 +28,7 @@ The f32 builds show the same pattern (arithmetic −12, compare −19, capital +
 
 ## How robust this is
 
-- **Scorer audit (blinded).** An independent judge labelled 472 outputs: every item where the builds disagreed, plus 50 random others per build. It saw no build labels and no scorer verdicts. Agreement with the scorer was 99.2% for both builds: 0 false passes, and 2 too-strict misses per build. With the judge's labels substituted, the primary difference is unchanged (−0.4 points). See `eval/audit/audit.md`. Limitation: sentence-style answers partly reveal which build wrote them.
+- **Scorer audit (blinded).** An independent judge labelled 472 outputs: every item where the builds disagreed, plus 50 random others per build. It saw no build labels and no scorer verdicts. Agreement with the scorer was 99.2% for both builds: 0 false passes, and 2 too-strict misses per build. With the judge's labels substituted, the primary difference is unchanged (−0.4 points). The author re-judged a random 40 of the judge's verdicts and agreed with all of them. See `eval/audit/audit.md`. Limitation: sentence-style answers partly reveal which build wrote them.
 - **Truncation.** 25 of 4-bit's outputs hit the 16-token limit. Re-running them with 64 tokens leaves the result unchanged (−0.4 points). 24 were still cut off, which confirms they are runaway outputs, not answers that needed more room. See `eval/results/v1-trunc64/truncation.md`.
 - **Determinism.** Each build gave identical tokens on 500/500 items across 4 runs: two cached launches, one with an empty cache, and one through the public site in a visible browser. Any difference between visitors' devices is therefore not same-device noise.
 
@@ -44,4 +44,4 @@ The two builds produced identical output on only 18.8% of items. Where they diff
 ## Process notes
 
 - One launch record in `eval/results/v1/launches.jsonl` (the 4th of 5) is a run-4 attempt that exited without writing outputs. It was re-run from scratch. No outputs were discarded.
-- The author's spot-check of 40 blinded adjudications, required by the plan, is still to do.
+- Author spot-check: the author re-judged 40 random blinded adjudications (seed 2) and agreed with all 40.

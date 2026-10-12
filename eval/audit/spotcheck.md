@@ -16,7 +16,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** CORRECT
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 2. `a0434`
@@ -29,7 +29,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** CORRECT
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 3. `a0028`
@@ -42,7 +42,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** CORRECT
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 4. `a0046`
@@ -55,7 +55,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** WRONG
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 5. `a0043`
@@ -68,7 +68,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** WRONG
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 6. `a0184`
@@ -81,7 +81,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** WRONG
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 7. `a0427`
@@ -94,7 +94,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** WRONG
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 8. `a0086`
@@ -107,7 +107,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** CORRECT
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 9. `a0376`
@@ -120,7 +120,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** CORRECT
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 10. `a0414`
@@ -133,7 +133,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** WRONG
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 11. `a0342`
@@ -146,7 +146,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** CORRECT
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 12. `a0437`
@@ -159,7 +159,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** WRONG
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 13. `a0157`
@@ -172,7 +172,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** WRONG
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 14. `a0128`
@@ -185,7 +185,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** WRONG
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 15. `a0310`
@@ -198,7 +198,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** CORRECT
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 16. `a0108`
@@ -211,7 +211,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** CORRECT
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 17. `a0018`
@@ -224,7 +224,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** CORRECT
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 18. `a0297`
@@ -237,7 +237,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** WRONG
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 19. `a0348`
@@ -250,7 +250,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** CORRECT
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 20. `a0081`
@@ -263,7 +263,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** CORRECT
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 21. `a0220`
@@ -276,7 +276,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** WRONG
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 22. `a0326`
@@ -289,7 +289,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** CORRECT
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 23. `a0201`
@@ -302,7 +302,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** CORRECT
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 24. `a0411`
@@ -315,7 +315,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** CORRECT
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 25. `a0370`
@@ -328,7 +328,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** WRONG
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 26. `a0440`
@@ -341,7 +341,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** WRONG
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 27. `a0260`
@@ -354,7 +354,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** CORRECT
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 28. `a0190`
@@ -367,7 +367,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** WRONG
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 29. `a0278`
@@ -380,7 +380,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** WRONG
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 30. `a0227`
@@ -393,7 +393,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** CORRECT
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 31. `a0257`
@@ -406,7 +406,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** WRONG
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 32. `a0137`
@@ -419,7 +419,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** CORRECT
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 33. `a0461`
@@ -432,7 +432,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** WRONG
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 34. `a0445`
@@ -445,7 +445,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** CORRECT
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 35. `a0014`
@@ -458,7 +458,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** CORRECT
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 36. `a0186`
@@ -471,7 +471,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** WRONG
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 37. `a0238`
@@ -484,7 +484,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** CORRECT
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 38. `a0163`
@@ -497,7 +497,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** CORRECT
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 39. `a0464`
@@ -510,7 +510,7 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** CORRECT
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree
 
 ## 40. `a0194`
@@ -523,5 +523,5 @@ Tick exactly one box per item by changing `[ ]` to `[x]`, save, then run:
 
 **Judge says:** WRONG
 
-- [ ] Agree
+- [x] Agree
 - [ ] Disagree

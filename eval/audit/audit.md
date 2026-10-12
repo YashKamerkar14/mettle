@@ -18,3 +18,7 @@ Per category with adjudicated labels:
 | capital | -22.0 |
 | compare | +17.0 |
 | sentiment | -10.0 |
+
+## Author spot-check
+
+The author re-judged 40 random adjudications (seed 2) and agreed with 40 (100%).
