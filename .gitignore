@@ -14,3 +14,6 @@ eval/.profile/
 eval/.venv/
 __pycache__/
 .pytest_cache/
+
+# Supabase CLI cache
+supabase/.temp/
