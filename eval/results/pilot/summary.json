@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "runtimeVersion": "0.2.86",
+    "settings": {
+      "temperature": 0,
+      "max_tokens": 16,
+      "top_logprobs": 2
+    },
+    "builds": [
+      "SmolLM2-360M-Instruct-q0f16-MLC",
+      "SmolLM2-360M-Instruct-q4f16_1-MLC"
+    ],
+    "device": {
+      "hasF16": true,
+      "isFallbackAdapter": false,
+      "vendor": "nvidia",
+      "architecture": "lovelace",
+      "device": "",
+      "description": "",
+      "browser": "Chrome 154",
+      "os": "Windows",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "webgpu": true
+    },
+    "questions": "questions/pilot.v1.jsonl",
+    "repeat": 2,
+    "startedAt": "2026-10-12T08:13:57.232Z"
+  },
+  "builds": {
+    "q0f16": {
+      "n": 48,
+      "correct": 30,
+      "strict": 21,
+      "ci": [
+        0.4836276351921527,
+        0.747847332391318
+      ],
+      "strict_ci": [
+        0.30701269040654244,
+        0.5772498258017222
+      ]
+    },
+    "q4f16_1": {
+      "n": 48,
+      "correct": 30,
+      "strict": 4,
+      "ci": [
+        0.4836276351921527,
+        0.747847332391318
+      ],
+      "strict_ci": [
+        0.032883756818091775,
+        0.1955330179036728
+      ]
+    }
+  },
+  "comparisons": [
+    {
+      "full": "q0f16",
+      "quant": "q4f16_1",
+      "diff": 0.0,
+      "ci": [
+        -0.16666666666666666,
+        0.16666666666666666
+      ],
+      "mcnemar": {
+        "only_a": 8,
+        "only_b": 8,
+        "p": 1.0
+      },
+      "strict_diff": 0.3541666666666667,
+      "strict_ci": [
+        0.1875,
+        0.5208333333333334
+      ],
+      "categories": {
+        "antonym": {
+          "diff": 0.0,
+          "ci": [
+            -0.375,
+            0.375
+          ],
+          "p_holm": 1.0
+        },
+        "arithmetic": {
+          "diff": 0.125,
+          "ci": [
+            0.0,
+            0.375
+          ],
+          "p_holm": 1.0
+        },
+        "capital": {
+          "diff": -0.25,
+          "ci": [
+            -0.625,
+            0.0
+          ],
+          "p_holm": 1.0
+        },
+        "compare": {
+          "diff": 0.25,
+          "ci": [
+            -0.5,
+            0.75
+          ],
+          "p_holm": 1.0
+        },
+        "sentiment": {
+          "diff": -0.125,
+          "ci": [
+            -0.5,
+            0.25
+          ],
+          "p_holm": 1.0
+        },
+        "sequence": {
+          "diff": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "p_holm": 1.0
+        }
+      },
+      "identical_outputs": 0.25,
+      "median_divergence_token": 0.0
+    }
+  ],
+  "determinism": {
+    "q0f16": {
+      "runs": 2,
+      "identical": 48,
+      "n": 48
+    },
+    "q4f16_1": {
+      "runs": 2,
+      "identical": 48,
+      "n": 48
+    }
+  },
+  "calibration": {
+    "antonym": {
+      "accuracy": 0.875,
+      "keep": true
+    },
+    "arithmetic": {
+      "accuracy": 0.875,
+      "keep": true
+    },
+    "capital": {
+      "accuracy": 0.625,
+      "keep": true
+    },
+    "compare": {
+      "accuracy": 0.625,
+      "keep": true
+    },
+    "sentiment": {
+      "accuracy": 0.75,
+      "keep": true
+    },
+    "sequence": {
+      "accuracy": 0.0,
+      "keep": false
+    }
+  }
+}

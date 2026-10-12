@@ -1,0 +1,48 @@
+{"id":"p1-arithmetic-0000","text":"61 + 34 = 95","tokens":["6","1"," +"," ","3","4"," ="," ","9","5","<|im_end|>"],"margins":[null,null,null,null,null,null,null,null,null,null,null],"finishReason":"stop","completionTokens":11,"ms":1799.9000000059605}
+{"id":"p1-arithmetic-0001","text":"13 + 29 = 42","tokens":["1","3"," +"," ","2","9"," ="," ","4","2","<|im_end|>"],"margins":[null,null,null,null,null,null,null,null,null,null,null],"finishReason":"stop","completionTokens":11,"ms":157.09999999403954}
+{"id":"p1-arithmetic-0002","text":"65 + 31 = 96","tokens":["6","5"," +"," ","3","1"," ="," ","9","6","<|im_end|>"],"margins":[null,null,null,null,null,null,null,null,null,null,null],"finishReason":"stop","completionTokens":11,"ms":150.39999997615814}
+{"id":"p1-arithmetic-0003","text":"61 - 38 = 23","tokens":["6","1"," -"," ","3","8"," ="," ","2","3","<|im_end|>"],"margins":[null,null,null,null,null,null,null,null,null,null,null],"finishReason":"stop","completionTokens":11,"ms":141.09999999403954}
+{"id":"p1-arithmetic-0004","text":"97 - 84 = 13","tokens":["9","7"," -"," ","8","4"," ="," ","1","3","<|im_end|>"],"margins":[null,null,null,null,null,null,null,null,null,null,null],"finishReason":"stop","completionTokens":11,"ms":148.30000001192093}
+{"id":"p1-arithmetic-0005","text":"33 + 46 = 89","tokens":["3","3"," +"," ","4","6"," ="," ","8","9","<|im_end|>"],"margins":[null,null,null,null,null,null,null,null,null,null,null],"finishReason":"stop","completionTokens":11,"ms":142.69999998807907}
+{"id":"p1-arithmetic-0006","text":"37 + 31 = 68","tokens":["3","7"," +"," ","3","1"," ="," ","6","8","<|im_end|>"],"margins":[null,null,null,null,null,null,null,null,null,null,null],"finishReason":"stop","completionTokens":11,"ms":149.2999999821186}
+{"id":"p1-arithmetic-0007","text":"63 - 18 = 45","tokens":["6","3"," -"," ","1","8"," ="," ","4","5","<|im_end|>"],"margins":[null,null,null,null,null,null,null,null,null,null,null],"finishReason":"stop","completionTokens":11,"ms":145.90000000596046}
+{"id":"p1-compare-0008","text":"98","tokens":["9","8","<|im_end|>"],"margins":[null,null,null],"finishReason":"stop","completionTokens":3,"ms":52.900000005960464}
+{"id":"p1-compare-0009","text":"93","tokens":["9","3","<|im_end|>"],"margins":[null,null,null],"finishReason":"stop","completionTokens":3,"ms":57}
+{"id":"p1-compare-0010","text":"82","tokens":["8","2","<|im_end|>"],"margins":[null,null,null],"finishReason":"stop","completionTokens":3,"ms":54.39999997615814}
+{"id":"p1-compare-0011","text":"87.","tokens":["8","7",".","<|im_end|>"],"margins":[null,null,null,null],"finishReason":"stop","completionTokens":4,"ms":60.60000002384186}
+{"id":"p1-compare-0012","text":"26","tokens":["2","6","<|im_end|>"],"margins":[null,null,null],"finishReason":"stop","completionTokens":3,"ms":51.599999994039536}
+{"id":"p1-compare-0013","text":"57.","tokens":["5","7",".","<|im_end|>"],"margins":[null,null,null,null],"finishReason":"stop","completionTokens":4,"ms":56.39999997615814}
+{"id":"p1-compare-0014","text":"48.","tokens":["4","8",".","<|im_end|>"],"margins":[null,null,null,null],"finishReason":"stop","completionTokens":4,"ms":58.5}
+{"id":"p1-compare-0015","text":"71.","tokens":["7","1",".","<|im_end|>"],"margins":[null,null,null,null],"finishReason":"stop","completionTokens":4,"ms":62.599999994039536}
+{"id":"p1-capital-0016","text":"Sana","tokens":["S","ana","<|im_end|>"],"margins":[null,null,null],"finishReason":"stop","completionTokens":3,"ms":48.69999998807907}
+{"id":"p1-capital-0017","text":"Beirut","tokens":["Be","ir","ut","<|im_end|>"],"margins":[null,null,null,null],"finishReason":"stop","completionTokens":4,"ms":54.80000001192093}
+{"id":"p1-capital-0018","text":"Kuala Lumpur","tokens":["K","ual","a"," L","ump","ur","<|im_end|>"],"margins":[null,null,null,null,null,null,null],"finishReason":"stop","completionTokens":7,"ms":85.30000001192093}
+{"id":"p1-capital-0019","text":"Tunis","tokens":["T","un","is","<|im_end|>"],"margins":[null,null,null,null],"finishReason":"stop","completionTokens":4,"ms":53.5}
+{"id":"p1-capital-0020","text":"The capital of Iceland is Reykjavik.","tokens":["The"," capital"," of"," Iceland"," is"," Rey","k","jav","ik",".","<|im_end|>"],"margins":[null,null,null,null,null,null,null,null,null,null,null],"finishReason":"stop","completionTokens":11,"ms":120.89999997615814}
+{"id":"p1-capital-0021","text":"Montreal","tokens":["Mont","real","<|im_end|>"],"margins":[null,null,null],"finishReason":"stop","completionTokens":3,"ms":45}
+{"id":"p1-capital-0022","text":"Sydney","tokens":["S","yd","ney","<|im_end|>"],"margins":[null,null,null,null],"finishReason":"stop","completionTokens":4,"ms":58}
+{"id":"p1-capital-0023","text":"The capital of the Philippines is Manila.","tokens":["The"," capital"," of"," the"," Philippines"," is"," Manila",".","<|im_end|>"],"margins":[null,null,null,null,null,null,null,null,null],"finishReason":"stop","completionTokens":9,"ms":107.2000000178814}
+{"id":"p1-antonym-0024","text":"Correct.","tokens":["Correct",".","<|im_end|>"],"margins":[null,null,null],"finishReason":"stop","completionTokens":3,"ms":46.400000005960464}
+{"id":"p1-antonym-0025","text":"Unfreeze.","tokens":["Un","freeze",".","<|im_end|>"],"margins":[null,null,null,null],"finishReason":"stop","completionTokens":4,"ms":57.5}
+{"id":"p1-antonym-0026","text":"\"Take\"","tokens":["\"","Take","\"","<|im_end|>"],"margins":[null,null,null,null],"finishReason":"stop","completionTokens":4,"ms":58.400000005960464}
+{"id":"p1-antonym-0027","text":"\"thin\"","tokens":["\"","thin","\"","<|im_end|>"],"margins":[null,null,null,null],"finishReason":"stop","completionTokens":4,"ms":53.30000001192093}
+{"id":"p1-antonym-0028","text":"Modern.","tokens":["Modern",".","<|im_end|>"],"margins":[null,null,null],"finishReason":"stop","completionTokens":3,"ms":48.099999994039536}
+{"id":"p1-antonym-0029","text":"After.","tokens":["After",".","<|im_end|>"],"margins":[null,null,null],"finishReason":"stop","completionTokens":3,"ms":50.599999994039536}
+{"id":"p1-antonym-0030","text":"\"sell\"","tokens":["\"","sell","\"","<|im_end|>"],"margins":[null,null,null,null],"finishReason":"stop","completionTokens":4,"ms":57.400000005960464}
+{"id":"p1-antonym-0031","text":"Night.","tokens":["Night",".","<|im_end|>"],"margins":[null,null,null],"finishReason":"stop","completionTokens":3,"ms":48.60000002384186}
+{"id":"p1-sentiment-0032","text":"positive","tokens":["positive","<|im_end|>"],"margins":[null,null],"finishReason":"stop","completionTokens":2,"ms":33.69999998807907}
+{"id":"p1-sentiment-0033","text":"Positive","tokens":["Positive","<|im_end|>"],"margins":[null,null],"finishReason":"stop","completionTokens":2,"ms":38.10000002384186}
+{"id":"p1-sentiment-0034","text":"positive","tokens":["positive","<|im_end|>"],"margins":[null,null],"finishReason":"stop","completionTokens":2,"ms":36.80000001192093}
+{"id":"p1-sentiment-0035","text":"positive","tokens":["positive","<|im_end|>"],"margins":[null,null],"finishReason":"stop","completionTokens":2,"ms":39.099999994039536}
+{"id":"p1-sentiment-0036","text":"Negative","tokens":["Negative","<|im_end|>"],"margins":[null,null],"finishReason":"stop","completionTokens":2,"ms":37.10000002384186}
+{"id":"p1-sentiment-0037","text":"Negative","tokens":["Negative","<|im_end|>"],"margins":[null,null],"finishReason":"stop","completionTokens":2,"ms":36}
+{"id":"p1-sentiment-0038","text":"positive","tokens":["positive","<|im_end|>"],"margins":[null,null],"finishReason":"stop","completionTokens":2,"ms":39.30000001192093}
+{"id":"p1-sentiment-0039","text":"positive","tokens":["positive","<|im_end|>"],"margins":[null,null],"finishReason":"stop","completionTokens":2,"ms":36}
+{"id":"p1-sequence-0040","text":"Monday","tokens":["Monday","<|im_end|>"],"margins":[null,null],"finishReason":"stop","completionTokens":2,"ms":36.5}
+{"id":"p1-sequence-0041","text":"Tuesday","tokens":["Tuesday","<|im_end|>"],"margins":[null,null],"finishReason":"stop","completionTokens":2,"ms":32.900000005960464}
+{"id":"p1-sequence-0042","text":"January","tokens":["January","<|im_end|>"],"margins":[null,null],"finishReason":"stop","completionTokens":2,"ms":43.900000005960464}
+{"id":"p1-sequence-0043","text":"April","tokens":["April","<|im_end|>"],"margins":[null,null],"finishReason":"stop","completionTokens":2,"ms":69.5}
+{"id":"p1-sequence-0044","text":"S","tokens":["S","<|im_end|>"],"margins":[null,null],"finishReason":"stop","completionTokens":2,"ms":31.599999994039536}
+{"id":"p1-sequence-0045","text":"J","tokens":["J","<|im_end|>"],"margins":[null,null],"finishReason":"stop","completionTokens":2,"ms":35.10000002384186}
+{"id":"p1-sequence-0046","text":"28","tokens":["2","8","<|im_end|>"],"margins":[null,null,null],"finishReason":"stop","completionTokens":3,"ms":42.69999998807907}
+{"id":"p1-sequence-0047","text":"14","tokens":["1","4","<|im_end|>"],"margins":[null,null,null],"finishReason":"stop","completionTokens":3,"ms":43.19999998807907}

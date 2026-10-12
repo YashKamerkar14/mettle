@@ -13,13 +13,8 @@
 // they include worker message latency. WebLLM's internal figures are recorded
 // next to them for comparison.
 
-import {
-  CreateWebWorkerMLCEngine,
-  type CompletionUsage,
-  hasModelInCache,
-  type InitProgressReport,
-  type WebWorkerMLCEngine,
-} from '@mlc-ai/web-llm'
+import type { CompletionUsage } from '@mlc-ai/web-llm'
+import { EngineHost } from '../llm/engine'
 import type { ModelBuild } from '../llm/models'
 import { SPEED_MAX_TOKENS, SPEED_PROMPT, SPEED_PROMPT_VERSION } from './prompt'
 import { summarize, type Summary } from './stats'
@@ -85,40 +80,14 @@ export function computeRunTiming(t: ChunkTimes): Omit<RunTiming, 'engine'> {
 }
 
 export class SpeedHarness {
-  private engine: WebWorkerMLCEngine | null = null
-  private worker: Worker | null = null
+  readonly host: EngineHost
 
-  async load(build: ModelBuild, cb: HarnessCallbacks = {}): Promise<{ cacheHit: boolean; downloadMs: number; loadMs: number }> {
-    const cacheHit = await hasModelInCache(build.id)
-    const start = performance.now()
-    let loadStartedAt: number | null = null
-    cb.onPhase?.(cacheHit ? 'load' : 'download', build.label)
-
-    const onProgress = (r: InitProgressReport) => {
-      // WebLLM reports "Fetching param cache[...]" while downloading and
-      // "Loading model from cache[...]" once it starts moving weights to the GPU.
-      if (loadStartedAt === null && r.text.startsWith('Loading model from cache')) {
-        loadStartedAt = performance.now()
-        cb.onPhase?.('load', build.label)
-      }
-      cb.onLoadProgress?.(r.progress, r.text)
-    }
-
-    if (!this.engine) {
-      this.worker = new Worker(new URL('../llm/worker.ts', import.meta.url), { type: 'module' })
-      this.engine = await CreateWebWorkerMLCEngine(this.worker, build.id, { initProgressCallback: onProgress })
-    } else {
-      this.engine.setInitProgressCallback(onProgress)
-      await this.engine.reload(build.id)
-    }
-
-    const end = performance.now()
-    const split = loadStartedAt ?? start
-    return { cacheHit, downloadMs: split - start, loadMs: end - split }
+  constructor(host = new EngineHost()) {
+    this.host = host
   }
 
   async runSpeedTest(build: ModelBuild, cb: HarnessCallbacks = {}): Promise<SpeedResult> {
-    const loaded = await this.load(build, cb)
+    const loaded = await this.host.load(build.id, build.label, cb)
 
     cb.onPhase?.('warmup', 'Warm-up run (not timed)')
     await this.generateOnce(cb)
@@ -164,15 +133,11 @@ export class SpeedHarness {
   }
 
   async dispose(): Promise<void> {
-    await this.engine?.unload()
-    this.worker?.terminate()
-    this.engine = null
-    this.worker = null
+    await this.host.dispose()
   }
 
   private async generateOnce(cb: HarnessCallbacks): Promise<{ timing: RunTiming; text: string }> {
-    const engine = this.engine
-    if (!engine) throw new Error('Model not loaded')
+    const engine = this.host.current
     // Start every run from an empty KV cache so no run reuses another's prompt.
     await engine.resetChat()
 

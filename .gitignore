@@ -7,3 +7,8 @@ dist/
 
 # Playwright's persistent Chrome profile (holds the cached model files)
 eval/.profile/
+
+# Python virtualenv for eval/
+eval/.venv/
+__pycache__/
+.pytest_cache/

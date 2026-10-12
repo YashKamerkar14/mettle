@@ -28,3 +28,13 @@ On Windows, Chrome uses the **integrated** GPU by default even when the page ask
 | RTX 4080 Laptop (`--force_high_performance_gpu`) | 1,718 GFLOPS | 112.9 tok/s | 6,050 tok/s |
 
 Results are grouped by the adapter the browser actually reported, not by the machine. The page should tell dual-GPU visitors how to switch (Windows: Settings → Display → Graphics → Chrome → High performance).
+
+## Session-to-session variation
+
+Repeated runs within one session agree closely, but separate sessions on the same device do not. Two sessions on the RTX 4080 Laptop GPU gave 112.9 and 89.6 tok/s median generation, a 21% gap, while the spread within each session was under 7%. Likely causes are GPU power state, laptop power mode, and background load. A single visitor result is therefore one sample of the device, not its true speed. The leaderboard shows distributions per device class, and "verified" seed rows should come from several sessions.
+
+## Quality runs
+
+- Every question runs from an empty conversation with greedy decoding, `max_tokens` 16, and top-2 log-probs recorded per token (`web/src/quality/runQuestions.ts`). The offline reference runner and the in-browser check use this same function.
+- On the reference device, two runs of each f16 build produced identical tokens on 48/48 pilot items, so any cross-device difference is not same-device noise.
+- In the pilot, the 4-bit build answered in full sentences much more often ("The capital of Iceland is Reykjavik.") while matching full precision on whether the answer was right. See `docs/analysis-plan.md` for how scoring separates the two.

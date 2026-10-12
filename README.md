@@ -5,7 +5,7 @@
 1. **How fast this device runs AI.** An instant GPU score with no download, then an opt-in full test: load time, time to first token, prompt reading speed and generation speed.
 2. **What compressing the model costs.** 4-bit vs. full precision: how much speed it buys, how much answer accuracy it loses, and whether different devices give the same answers.
 
-> Status: Week 1 (speed harness). Quality evaluation and the public leaderboard are next.
+> Status: speed harness live at **https://yashkamerkar14.github.io/mettle/**. Quality evaluation: question set, reference runner and analysis built; pilot done; full run pending the freeze of [the analysis plan](docs/analysis-plan.md). Public leaderboard next.
 
 ## What's mine vs. what's a library
 
@@ -14,13 +14,15 @@
 | Model runtime (WebGPU kernels, tokenizer) | [WebLLM](https://github.com/mlc-ai/web-llm) |
 | Instant score: tiled matmul in WGSL, CPU-verified | Mettle (`web/src/gpu/`) |
 | Timing harness: warm-up, 3 timed runs, 5 separate timings | Mettle (`web/src/bench/harness.ts`) |
-| Eval suite, reference runs, analysis | Mettle (`eval/`) |
+| Question set generator (500 items, 5 categories) | Mettle (`eval/questions/`) |
+| Answer runner shared by offline and in-browser checks | Mettle (`web/src/quality/`) |
+| Scoring, statistics (Wilson, McNemar, paired bootstrap, Holm), reports | Mettle (`eval/analysis/`) |
 
 ## Layout
 
 ```
 web/      Vite + React + TypeScript site (instant score, worker, harness)
-eval/     Playwright tooling: smoke test now, offline reference runner next
+eval/     question set, Playwright reference runner, Python scoring and analysis
 docs/     analysis plan (pre-registered) and methodology notes
 ```
 
@@ -40,4 +42,13 @@ cd web && npm run build && npx vite preview --port 4173
 # in another shell
 cd eval && npm install
 node smoke.mjs --full          # add --dgpu on a dual-GPU laptop
+```
+
+Offline reference run and analysis (needs Chrome and Python 3.11):
+
+```sh
+cd web && npm run build && cd ..
+node eval/reference.mjs --questions eval/questions/questions.v1.jsonl   --builds q0f16,q4f16_1,q0f32,q4f32_1 --repeat 2 --dgpu --out eval/results/v1
+cd eval && python -m venv .venv && .venv/Scripts/pip install -r requirements.txt
+.venv/Scripts/python analysis/analyze.py --results results/v1 --questions questions/questions.v1.jsonl
 ```

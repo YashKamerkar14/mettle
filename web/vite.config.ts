@@ -1,4 +1,5 @@
 import { readFileSync } from 'node:fs'
+import { fileURLToPath } from 'node:url'
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
@@ -15,5 +16,14 @@ export default defineConfig({
   },
   worker: {
     format: 'es',
+  },
+  build: {
+    rolldownOptions: {
+      // eval.html is the headless page the offline reference runner drives.
+      input: {
+        main: fileURLToPath(new URL('./index.html', import.meta.url)),
+        eval: fileURLToPath(new URL('./eval.html', import.meta.url)),
+      },
+    },
   },
 })
