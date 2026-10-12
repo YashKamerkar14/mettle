@@ -22,3 +22,13 @@ export const FINDINGS = {
   capitals: '+21 pts',
   questions: 500,
 }
+
+// Per-category accuracy (answer correct, run 1) from eval/results/v1/report.md,
+// ordered from the largest 4-bit loss to the largest gain.
+export const CATEGORY_ROWS = [
+  { label: 'Arithmetic', full: 90, quant: 71, note: 'Two-digit addition and subtraction.' },
+  { label: 'Number comparison', full: 52, quant: 35, chance: 50, note: '23 of 100 4-bit answers ran away into digit strings.' },
+  { label: 'Antonyms', full: 79, quant: 86 },
+  { label: 'Sentiment', full: 65, quant: 75, chance: 50 },
+  { label: 'Capitals', full: 64, quant: 85, note: '4-bit answers in full sentences, and is right more often.' },
+]

@@ -8,7 +8,11 @@ import { Sparkline } from './components/Sparkline'
 import { SPEED_MAX_TOKENS } from './bench/prompt'
 import { runConsistencyCheck, type ConsistencyResult } from './quality/consistency'
 import { SubmitPanel } from './leaderboard/SubmitPanel'
-import { FINDINGS, LINKS } from './findings'
+import { CATEGORY_ROWS, FINDINGS, LINKS } from './findings'
+import { GpuBackground } from './components/GpuBackground'
+import { Gauge } from './components/Gauge'
+import { DumbbellChart } from './components/DumbbellChart'
+import { CountUp, Reveal } from './components/motion'
 
 type Busy = null | 'instant' | 'full' | 'sustained'
 type UiPhase = Phase | 'check'
@@ -29,11 +33,15 @@ export default function App() {
   const [phase, setPhase] = useState<{ phase: UiPhase; detail: string } | null>(null)
   const [loadProgress, setLoadProgress] = useState(0)
   const [liveText, setLiveText] = useState('')
+  const [liveRate, setLiveRate] = useState(0)
   const [results, setResults] = useState<Partial<Record<Precision, BuildResult>>>({})
   const [running, setRunning] = useState<Precision | null>(null)
   const [sustained, setSustained] = useState<SustainedPoint[] | null>(null)
 
   const harness = useRef<SpeedHarness | null>(null)
+  const tokenTimes = useRef<number[]>([])
+  const lastLen = useRef(0)
+  const lastRateUpdate = useRef(0)
 
   useEffect(() => {
     detectDevice().then(setDevice, (e) => setError(String(e)))
@@ -60,7 +68,27 @@ export default function App() {
   const callbacks = {
     onPhase: (p: Phase, detail: string) => setPhase({ phase: p, detail }),
     onLoadProgress: (f: number) => setLoadProgress(f),
-    onToken: (t: string) => setLiveText(t),
+    onToken: (t: string) => {
+      setLiveText(t)
+      // Each streamed chunk is about one token; a shorter text means a new generation began.
+      const now = performance.now()
+      if (t.length < lastLen.current) tokenTimes.current = []
+      lastLen.current = t.length
+      const times = tokenTimes.current
+      times.push(now)
+      while (times.length && now - times[0] > 1000) times.shift()
+      if (now - lastRateUpdate.current > 150 && times.length > 1) {
+        lastRateUpdate.current = now
+        setLiveRate(((times.length - 1) * 1000) / (times[times.length - 1] - times[0]))
+      }
+    },
+  }
+
+  const resetLive = () => {
+    setLiveText('')
+    setLiveRate(0)
+    tokenTimes.current = []
+    lastLen.current = 0
   }
 
   const runInstant = () => guarded('instant', async () => setInstant(await runInstantScore()))
@@ -71,7 +99,7 @@ export default function App() {
       const build = pickBuild(precision, device.hasF16)
       setRunning(precision)
       setSustained(null)
-      setLiveText('')
+      resetLive()
       setLoadProgress(0)
       // WebLLM is ~2 MB gzipped; load it only once someone opts into the full test.
       harness.current ??= new (await import('./bench/harness')).SpeedHarness()
@@ -88,6 +116,7 @@ export default function App() {
   const runSustained = () =>
     guarded('sustained', async () => {
       if (!harness.current) return
+      resetLive()
       setSustained(await harness.current.runSustained(callbacks))
     })
 
@@ -111,12 +140,17 @@ export default function App() {
   const r0 = results.q0
   const progress =
     phase && busy !== 'instant' ? (
-      <Progress phase={phase} loadProgress={loadProgress} liveText={busy !== 'sustained' && phase.phase !== 'check' ? liveText : ''} />
+      <Progress
+        phase={phase}
+        loadProgress={loadProgress}
+        liveText={busy !== 'sustained' && phase.phase !== 'check' ? liveText : ''}
+        liveRate={liveRate}
+      />
     ) : null
 
   return (
     <>
-      <Hero />
+      <Hero paused={busy !== null} />
 
       <main>
         {error && (
@@ -125,53 +159,79 @@ export default function App() {
           </p>
         )}
 
+        <Reveal>
+          <section className="step findings-card">
+            <div className="step-head">
+              <span className="step-n">≈</span>
+              <div>
+                <h2>Under the zero</h2>
+                <p className="step-meta">Answer accuracy by category · {FINDINGS.questions} questions · reference run</p>
+              </div>
+            </div>
+            <p className="muted">
+              Overall, 4-bit lands within half a point of full precision. Per category it is anything but neutral: it
+              loses on numbers and gains on recall. Hover or tab through the rows.
+            </p>
+            <DumbbellChart
+              rows={CATEGORY_ROWS}
+              caption="Accuracy per category for full precision and 4-bit SmolLM2-360M on the 500-question reference run."
+            />
+          </section>
+        </Reveal>
+
         <DeviceStrip device={device} />
 
         {device && !device.webgpu && <NoWebGpu reason={device.reason} />}
 
         {device?.webgpu && q4 && q0 && (
           <>
-            <Step n={1} title="Instant score" meta="No download · about 1 second">
-              <p className="muted">A matrix multiply written in WGSL, run on your graphics chip and checked on the CPU.</p>
-              <button onClick={runInstant} disabled={busy !== null}>
-                {busy === 'instant' ? 'Running…' : instant ? 'Run again' : 'Run instant score'}
-              </button>
-              {instant && <InstantView instant={instant} />}
-            </Step>
+            <Reveal>
+              <Step n={1} title="Instant score" meta="No download · about 1 second">
+                <p className="muted">A matrix multiply written in WGSL, run on your graphics chip and checked on the CPU.</p>
+                <button onClick={runInstant} disabled={busy !== null}>
+                  {busy === 'instant' ? 'Running…' : instant ? 'Run again' : 'Run instant score'}
+                </button>
+                {instant && <InstantView instant={instant} />}
+              </Step>
+            </Reveal>
 
-            <Step n={2} title="Full test, 4-bit model" meta={`${q4.downloadMB} MB download, cached after`}>
-              <p className="muted">
-                Runs SmolLM2-360M on your GPU: one warm-up and three timed runs of {SPEED_MAX_TOKENS} tokens, then 25
-                fixed questions whose answers are checked against our reference device, token by token.
-              </p>
-              <button onClick={() => runBuild('q4')} disabled={busy !== null}>
-                {running === 'q4' ? 'Running…' : r4 ? 'Run again' : `Start full test`}
-              </button>
-              {running === 'q4' && progress}
-              {r4 && <BuildResultView result={r4} />}
-              {r4?.check && <SubmitPanel device={device} instant={instant} speed={r4.speed} check={r4.check} label="4-bit" />}
-            </Step>
+            <Reveal>
+              <Step n={2} title="Full test, 4-bit model" meta={`${q4.downloadMB} MB download, cached after`}>
+                <p className="muted">
+                  Runs SmolLM2-360M on your GPU: one warm-up and three timed runs of {SPEED_MAX_TOKENS} tokens, then 25
+                  fixed questions whose answers are checked against our reference device, token by token.
+                </p>
+                <button onClick={() => runBuild('q4')} disabled={busy !== null}>
+                  {running === 'q4' ? 'Running…' : r4 ? 'Run again' : `Start full test`}
+                </button>
+                {running === 'q4' && progress}
+                {r4 && <BuildResultView result={r4} />}
+                {r4?.check && <SubmitPanel device={device} instant={instant} speed={r4.speed} check={r4.check} label="4-bit" />}
+              </Step>
+            </Reveal>
 
-            <Step
-              n={3}
-              title="Compare with full precision"
-              meta={`${q0.downloadMB} MB download`}
-              locked={!r4?.check}
-              lockedText="Finish step 2 first."
-            >
-              <p className="muted">
-                The same test on the uncompressed model, so you can see what 4-bit compression buys on your device.
-              </p>
-              <button onClick={() => runBuild('q0')} disabled={busy !== null}>
-                {running === 'q0' ? 'Running…' : r0 ? 'Run again' : 'Run full precision'}
-              </button>
-              {running === 'q0' && progress}
-              {r0 && <BuildResultView result={r0} />}
-              {r0?.check && (
-                <SubmitPanel device={device} instant={instant} speed={r0.speed} check={r0.check} label="full-precision" />
-              )}
-              {r4?.check && r0?.check && <Comparison q4={r4} q0={r0} />}
-            </Step>
+            <Reveal>
+              <Step
+                n={3}
+                title="Compare with full precision"
+                meta={`${q0.downloadMB} MB download`}
+                locked={!r4?.check}
+                lockedText="Finish step 2 first."
+              >
+                <p className="muted">
+                  The same test on the uncompressed model, so you can see what 4-bit compression buys on your device.
+                </p>
+                <button onClick={() => runBuild('q0')} disabled={busy !== null}>
+                  {running === 'q0' ? 'Running…' : r0 ? 'Run again' : 'Run full precision'}
+                </button>
+                {running === 'q0' && progress}
+                {r0 && <BuildResultView result={r0} />}
+                {r0?.check && (
+                  <SubmitPanel device={device} instant={instant} speed={r0.speed} check={r0.check} label="full-precision" />
+                )}
+                {r4?.check && r0?.check && <Comparison q4={r4} q0={r0} />}
+              </Step>
+            </Reveal>
 
             {(r4 || r0) && (
               <section className="extras">
@@ -203,9 +263,10 @@ export default function App() {
   )
 }
 
-function Hero() {
+function Hero({ paused }: { paused: boolean }) {
   return (
     <header className="hero">
+      <GpuBackground paused={paused} />
       <div className="hero-inner">
         <p className="eyebrow">In-browser LLM benchmark · WebGPU</p>
         <h1>Mettle</h1>
@@ -215,10 +276,30 @@ function Hero() {
           4-bit costs in answer quality. Everything runs in your browser.
         </p>
         <div className="stats">
-          <Stat value={FINDINGS.speedRatio} label="faster with 4-bit" note={`${FINDINGS.speedDevice}, ${FINDINGS.speedCi}`} />
-          <Stat value={FINDINGS.accuracyDiff} label="accuracy change" note={`${FINDINGS.accuracyCi}, not significant`} />
           <Stat
-            value={`${FINDINGS.formatFull} → ${FINDINGS.formatQuant}`}
+            value={
+              <>
+                <CountUp value={1.12} decimals={2} />×
+              </>
+            }
+            label="faster with 4-bit"
+            note={`${FINDINGS.speedDevice}, ${FINDINGS.speedCi}`}
+          />
+          <Stat
+            value={
+              <>
+                <CountUp value={-0.4} decimals={1} /> pts
+              </>
+            }
+            label="accuracy change"
+            note={`${FINDINGS.accuracyCi}, not significant`}
+          />
+          <Stat
+            value={
+              <>
+                <CountUp value={48} />% → <CountUp value={9} />%
+              </>
+            }
             label="followed “answer only”"
             note="full precision → 4-bit"
           />
@@ -232,7 +313,7 @@ function Hero() {
   )
 }
 
-function Stat({ value, label, note }: { value: string; label: string; note: string }) {
+function Stat({ value, label, note }: { value: ReactNode; label: string; note: string }) {
   return (
     <div className="stat">
       <span className="stat-value">{value}</span>
@@ -306,16 +387,32 @@ const PHASE_LABEL: Record<UiPhase, string> = {
   done: 'Done',
 }
 
-function Progress(props: { phase: { phase: UiPhase; detail: string }; loadProgress: number; liveText: string }) {
-  const { phase, loadProgress, liveText } = props
+function Progress(props: {
+  phase: { phase: UiPhase; detail: string }
+  loadProgress: number
+  liveText: string
+  liveRate: number
+}) {
+  const { phase, loadProgress, liveText, liveRate } = props
   const showBar = phase.phase === 'download' || phase.phase === 'load'
+  const generating = phase.phase === 'warmup' || phase.phase === 'run' || phase.phase === 'sustained'
   return (
     <div className="progress" aria-live="polite">
       <p>
         <span className="pulse" /> <strong>{PHASE_LABEL[phase.phase]}</strong> <span className="muted">{phase.detail}</span>
       </p>
       {showBar && <progress value={loadProgress} max={1} />}
-      {liveText && <pre className="live">{liveText}</pre>}
+      {generating && (
+        <div className="live-wrap">
+          <Gauge value={liveRate} live label="Live generation speed" />
+          {liveText && (
+            <pre className="live">
+              {liveText}
+              <span className="caret" />
+            </pre>
+          )}
+        </div>
+      )}
     </div>
   )
 }
@@ -324,7 +421,8 @@ function InstantView({ instant }: { instant: InstantScoreResult }) {
   return (
     <div className="result">
       <p className="big">
-        {fmt(instant.gflops.median, 0)}<span className="unit"> GFLOPS</span>
+        <CountUp value={instant.gflops.median} />
+        <span className="unit"> GFLOPS</span>
       </p>
       <p className="muted small">
         range {fmt(instant.gflops.min, 0)}–{fmt(instant.gflops.max, 0)} over {instant.gflops.n} samples ·{' '}
@@ -343,15 +441,17 @@ function BuildResultView({ result }: { result: BuildResult }) {
   const { build, speed, check } = result
   return (
     <div className="result">
-      <p className="result-title">{build.label}</p>
-      <p className="big">
-        {fmt(speed.decodeTokPerSec.median, 1)}<span className="unit"> tokens / s</span>
+      <p className="result-title">
+        {build.label} · median of {speed.runs.length} runs
       </p>
-      <div className="tiles">
-        <Tile label="First token" value={`${fmt(speed.ttftMs.median, 0)} ms`} />
-        <Tile label="Prompt reading" value={`${fmt(speed.prefillTokPerSec.median, 0)} tok/s`} />
-        <Tile label="Load" value={`${fmt(speed.loadMs / 1000, 1)} s`} />
-        <Tile label="Download" value={speed.cacheHit ? 'cached' : `${fmt(speed.downloadMs / 1000, 1)} s`} />
+      <div className="result-grid">
+        <Gauge value={speed.decodeTokPerSec.median} label={`${build.label} generation speed`} />
+        <div className="tiles">
+          <Tile label="First token" value={`${fmt(speed.ttftMs.median, 0)} ms`} />
+          <Tile label="Prompt reading" value={`${fmt(speed.prefillTokPerSec.median, 0)} tok/s`} />
+          <Tile label="Load" value={`${fmt(speed.loadMs / 1000, 1)} s`} />
+          <Tile label="Download" value={speed.cacheHit ? 'cached' : `${fmt(speed.downloadMs / 1000, 1)} s`} />
+        </div>
       </div>
       <details>
         <summary>All timings</summary>
@@ -401,8 +501,13 @@ function CheckView({ check }: { check: ConsistencyResult }) {
           answers identical to our reference device
         </p>
         <div className="dots" role="img" aria-label={`${check.matched} of ${check.total} answers match`}>
-          {check.items.map((i) => (
-            <span key={i.id} className={`dot ${i.match ? 'dot-ok' : 'dot-bad'}`} title={`${i.category}: ${i.match ? 'match' : 'differs'}`} />
+          {check.items.map((i, n) => (
+            <span
+              key={i.id}
+              className={`dot ${i.match ? 'dot-ok' : 'dot-bad'}`}
+              style={{ animationDelay: `${n * 30}ms` }}
+              title={`${i.category}: ${i.match ? 'match' : 'differs'}`}
+            />
           ))}
         </div>
       </div>
@@ -448,7 +553,7 @@ function Comparison({ q4, q0 }: { q4: BuildResult; q0: BuildResult }) {
     <div className="comparison">
       <p className="result-title">What compression buys on your device</p>
       <p className="big">
-        {fmt(a / b, 2)}×<span className="unit"> generation speed with 4-bit</span>
+        <CountUp value={a / b} decimals={2} />×<span className="unit"> generation speed with 4-bit</span>
       </p>
       <div className="bars">
         <Bar label="4-bit" value={a} max={max} accent />
