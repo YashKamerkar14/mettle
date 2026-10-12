@@ -72,19 +72,6 @@ export async function answerQuestion(engine: WebWorkerMLCEngine, q: Question): P
   }
 }
 
-export async function answerAll(
-  engine: WebWorkerMLCEngine,
-  questions: Question[],
-  onProgress?: (done: number, total: number) => void,
-): Promise<Answer[]> {
-  const out: Answer[] = []
-  for (const q of questions) {
-    out.push(await answerQuestion(engine, q))
-    onProgress?.(out.length, questions.length)
-  }
-  return out
-}
-
 /** Index of the first token where two outputs differ, or null if identical. */
 export function firstDivergence(a: string[], b: string[]): number | null {
   const n = Math.min(a.length, b.length)

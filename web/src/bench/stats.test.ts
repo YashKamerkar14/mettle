@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { median, quantile, relativeSpread, summarize } from './stats'
+import { median, quantile, summarize } from './stats'
 
 describe('quantile', () => {
   it('matches numpy linear interpolation', () => {
@@ -27,9 +27,8 @@ describe('median', () => {
 })
 
 describe('summarize', () => {
-  it('reports spread around the median', () => {
+  it('reports median and range', () => {
     const s = summarize([40, 42, 44])
     expect(s).toMatchObject({ n: 3, median: 42, min: 40, max: 44 })
-    expect(relativeSpread(s)).toBeCloseTo(4 / 42)
   })
 })

@@ -25,7 +25,7 @@ const ORDER = ['q4f16_1', 'q0f16', 'q0f16', 'q4f16_1']
 
 mkdirSync(outDir, { recursive: true })
 const port = 4175
-const server = spawn('npx', ['vite', 'preview', '--port', String(port), '--strictPort'], {
+const server = spawn(`npx vite preview --port ${port} --strictPort`, {
   cwd: join(here, '../web'),
   shell: true,
   stdio: 'ignore',

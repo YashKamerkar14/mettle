@@ -34,7 +34,7 @@ let server = null
 let baseUrl = args.url
 if (!baseUrl) {
   const port = 4174
-  server = spawn('npx', ['vite', 'preview', '--port', String(port), '--strictPort'], {
+  server = spawn(`npx vite preview --port ${port} --strictPort`, {
     cwd: join(here, '../web'),
     shell: true,
     stdio: 'ignore',

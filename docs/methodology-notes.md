@@ -27,7 +27,7 @@ On Windows, Chrome uses the **integrated** GPU by default even when the page ask
 | Radeon 610M (default) | 76 GFLOPS | 21.8 tok/s | 160 tok/s |
 | RTX 4080 Laptop (`--force_high_performance_gpu`) | 1,718 GFLOPS | 112.9 tok/s | 6,050 tok/s |
 
-Results are grouped by the adapter the browser actually reported, not by the machine. The page should tell dual-GPU visitors how to switch (Windows: Settings → Display → Graphics → Chrome → High performance).
+Results are grouped by the adapter the browser actually reported, not by the machine. The page shows dual-GPU visitors how to switch (Windows: Settings → Display → Graphics → the browser → High performance).
 
 ## Session-to-session variation
 

@@ -43,7 +43,8 @@ The two builds produced identical output on only 18.8% of items. Where they diff
 The gain is small for a 4× smaller model. A 360M-parameter model on a high-end GPU is probably limited by per-token overhead more than by reading weights from memory; this protocol doesn't test that. Weaker or integrated GPUs may gain more, but that hasn't been measured. Four sessions were excluded and replaced because they broke the protocol's AC-power or idle conditions (see "Deviations" in the analysis plan).
 
 ## Not yet measured
-- **Cross-device consistency:** the 25-item subset is fixed (`eval/questions/subset.v1.jsonl`, SHA-256 `65aacbb3…7082`) and will ship with the site; collection hasn't started.
+
+- **Cross-device consistency:** the 25-item subset is fixed (`eval/questions/subset.v1.jsonl`, SHA-256 `65aacbb3…7082`) and ships with the site, which checks every visitor's answers against the reference device. Crowd submissions open with the leaderboard; under the plan, match rates are not examined until 150 valid submissions per build or 2027-01-31.
 
 ## Process notes
 

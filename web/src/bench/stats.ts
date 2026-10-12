@@ -34,8 +34,3 @@ export function summarize(values: number[]): Summary {
     q3: quantile(values, 0.75),
   }
 }
-
-/** Spread as a fraction of the median: (max - min) / median. */
-export function relativeSpread(s: Summary): number {
-  return s.median === 0 ? 0 : (s.max - s.min) / s.median
-}

@@ -34,37 +34,36 @@ page.on('pageerror', (e) => console.error('[pageerror]', e.message))
 
 try {
   await page.goto(url)
-  await page.getByText('16-bit shaders').waitFor({ timeout: 15_000 })
-  console.log('Device:', (await page.locator('.facts').innerText()).replace(/\n/g, ' | '))
+  await page.locator('.chip-key', { hasText: '16-bit' }).waitFor({ timeout: 15_000 })
+  console.log('Device:', (await page.locator('.device-strip .chip').allInnerTexts()).join(' | '))
 
-  await page.getByRole('button', { name: /instant score/i }).click()
-  const instant = page.locator('section', { hasText: 'Instant score' }).locator('.result')
-  await instant.waitFor({ timeout: 60_000 })
-  console.log('Instant:', (await instant.innerText()).replace(/\n/g, ' | '))
+  const steps = page.locator('section.step')
+  const step = (n) => steps.filter({ has: page.locator('.step-n', { hasText: String(n) }) })
+  const waitFor = async (locator, label) => {
+    const started = Date.now()
+    await Promise.race([
+      locator.waitFor({ timeout: 15 * 60_000 }),
+      page.locator('.alert').waitFor({ timeout: 15 * 60_000 }).then(async () => {
+        throw new Error(await page.locator('.alert').innerText())
+      }),
+    ])
+    console.log(`${label} (${((Date.now() - started) / 1000).toFixed(0)} s)`)
+  }
+
+  await page.getByRole('button', { name: /run instant score/i }).click()
+  await waitFor(step(1).locator('.result'), 'Instant score')
+  console.log((await step(1).locator('.result').innerText()).replace(/\n/g, ' | '))
 
   if (full) {
-    const section = page.locator('section', { hasText: 'Full test' })
-    const waitFor = async (locator, label) => {
-      const started = Date.now()
-      await Promise.race([
-        locator.waitFor({ timeout: 15 * 60_000 }),
-        page.locator('.error').waitFor({ timeout: 15 * 60_000 }).then(async () => {
-          throw new Error(await page.locator('.error').innerText())
-        }),
-      ])
-      console.log(`${label} (${((Date.now() - started) / 1000).toFixed(0)} s)`)
-    }
-
     await page.getByRole('button', { name: /start full test/i }).click()
-    await waitFor(section.getByText(/Answers match the reference/).first(), '4-bit speed + answer check')
-    const lines = await section.locator('.result').first().locator('.big, table, .check p').allInnerTexts()
-    console.log(lines.join('\n'))
+    await waitFor(step(2).locator('.check'), '4-bit speed + answer check')
+    console.log((await step(2).locator('.big, .tile, .check-head p').allInnerTexts()).join(' | ').replace(/\n/g, ' '))
 
     if (args.includes('--compare')) {
       await page.getByRole('button', { name: /run full precision/i }).click()
-      await waitFor(section.locator('.comparison'), 'Full precision + comparison')
-      console.log((await section.locator('.check p strong').allInnerTexts()).join('\n'))
-      console.log(await section.locator('.comparison').innerText())
+      await waitFor(step(3).locator('.comparison'), 'Full precision + comparison')
+      console.log((await step(3).locator('.check-head p').allInnerTexts()).join(' | '))
+      console.log((await step(3).locator('.comparison .big, .bar-row').allInnerTexts()).join(' | ').replace(/\n/g, ' '))
     }
   }
 } finally {
