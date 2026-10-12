@@ -4,7 +4,7 @@ Model: SmolLM2-360M-Instruct, WebLLM 0.2.86, 500 questions (`eval/questions/ques
 
 ## Headline
 
-> **Compressing to 4-bit made no measurable difference to how often the answer was right (−0.4 points, 95% CI −5.8 to +5.0), but it cut how often the model followed "answer with only …" from 48.0% to 8.6% (−39.4 points, 95% CI −44.4 to −34.4).**
+> **On this device, 4-bit was 1.12× as fast (95% CI 1.11–1.14). Compressing to 4-bit made no measurable difference to how often the answer was right (−0.4 points, 95% CI −5.8 to +5.0), but it cut how often the model followed "answer with only …" from 48.0% to 8.6% (−39.4 points, 95% CI −44.4 to −34.4).**
 
 Under the pre-registered reading, the accuracy result is **inconclusive**, not "equivalent". The 90% CI (−5.0 to +4.0) touches the ±5-point margin, so equivalence can't be claimed at this sample size.
 
@@ -36,9 +36,13 @@ The f32 builds show the same pattern (arithmetic −12, compare −19, capital +
 
 The two builds produced identical output on only 18.8% of items. Where they differ, they usually diverge at the very first token. At that token, full precision's top-1 vs top-2 log-prob margin had a median of 0.57, against 2.88 across all tokens. Compression flips the model's choice mostly where full precision was already nearly undecided.
 
-## Not yet measured
+## Speed
 
-- **Speed ratio** (10-session ABBA protocol): pending.
+**4-bit generates 1.12× as fast as full precision** (geometric mean of 10 sessions, 95% CI 1.11–1.14). Prompt reading is 1.20× (1.18–1.23). Measured on the reference device (RTX 4080 Laptop GPU, plugged in, Legion Balance Mode), ABBA order, cached weights, 5 idle minutes before each session (`eval/results/speed-v1/speed.md`).
+
+The gain is small for a 4× smaller model. A 360M-parameter model on a high-end GPU is probably limited by per-token overhead more than by reading weights from memory; this protocol doesn't test that. Weaker or integrated GPUs may gain more, but that hasn't been measured. Four sessions were excluded and replaced because they broke the protocol's AC-power or idle conditions (see "Deviations" in the analysis plan).
+
+## Not yet measured
 - **Cross-device consistency:** the 25-item subset is fixed (`eval/questions/subset.v1.jsonl`, SHA-256 `65aacbb3…7082`) and will ship with the site; collection hasn't started.
 
 ## Process notes

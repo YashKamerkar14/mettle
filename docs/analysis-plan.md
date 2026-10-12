@@ -141,4 +141,4 @@ The key policy itself was applied without consulting outputs. Two additions sugg
 
 ## Deviations
 
-_None yet._
+**2026-10-12, speed protocol.** The plan says "10 sessions" with AC power and 5 idle minutes, but doesn't say what happens to a session that breaks those conditions. Four sessions broke them and were excluded, by condition and not by their values. Sessions 3–4: the laptop was unplugged (Windows power event). Sessions 5–6: the author's tooling ran during their idle windows. All four were replaced with new sessions until 10 valid ones existed (sessions 1–2 and 7–14). The excluded sessions stay in `eval/results/speed-v1/sessions.jsonl`, with reasons in `excluded.json`. The runner now checks AC power before and after every session.

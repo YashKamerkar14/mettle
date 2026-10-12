@@ -1,4 +1,6 @@
 {
   "3": "laptop unplugged at 14:01:56 local (Windows Kernel-Power event 105), about 40 s into the session; blocks after that ran on battery",
-  "4": "ran entirely on battery (unplugged during session 3); the runner then stopped before session 5 on its AC-power check"
+  "4": "ran entirely on battery (unplugged during session 3); the runner then stopped before session 5 on its AC-power check",
+  "5": "protocol violation: the author's tooling (type checks, Deno download and check, unit tests) ran on the laptop during this session's idle window; excluded by that condition, regardless of its numbers",
+  "6": "protocol violation: the author's tooling (type checks, Deno download and check, unit tests) ran on the laptop during this session's idle window; excluded by that condition, regardless of its numbers"
 }
