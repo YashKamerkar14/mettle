@@ -1,0 +1,282 @@
+{
+  "meta": {
+    "runtimeVersion": "0.2.86",
+    "settings": {
+      "temperature": 1,
+      "top_p": 1e-05,
+      "max_tokens": 16,
+      "top_logprobs": 2
+    },
+    "builds": [
+      "SmolLM2-360M-Instruct-q0f16-MLC",
+      "SmolLM2-360M-Instruct-q4f16_1-MLC",
+      "SmolLM2-360M-Instruct-q0f32-MLC",
+      "SmolLM2-360M-Instruct-q4f32_1-MLC"
+    ],
+    "device": {
+      "hasF16": true,
+      "isFallbackAdapter": false,
+      "vendor": "nvidia",
+      "architecture": "lovelace",
+      "device": "",
+      "description": "",
+      "browser": "Chrome 154",
+      "os": "Windows",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "webgpu": true
+    },
+    "questions": "questions/questions.v1.jsonl",
+    "questionsSha256": "95ded352b61b2d98cb1bffed15d9fc7f568febfc10ffe07b3279df6d0f038be8",
+    "runs": [
+      1,
+      1
+    ],
+    "freshProfile": false,
+    "url": "http://localhost:4174/",
+    "artifacts": {
+      "SmolLM2-360M-Instruct-q0f16-MLC": {
+        "tensorCache": "66598266d3f3759e8cc01e0f0a730951717b6b78ee9d2864854f36530d670aa2",
+        "modelLib": "8c36df447e542ed85e4ad955ab91e09b62a836eb34e7bf822eefb9ad9b03f3da",
+        "modelLibUrl": "https://raw.githubusercontent.com/mlc-ai/binary-mlc-llm-libs/main/web-llm-models/v0_2_86/base/SmolLM2-360M-Instruct-q0f16_cs1k-webgpu.wasm"
+      },
+      "SmolLM2-360M-Instruct-q0f32-MLC": {
+        "tensorCache": "80f36c73db7e810834555b658e481733ea9e53327d7f0cac0615d9eb3d9873db",
+        "modelLib": "189c52dc08660657e9ef93409b017800133c2746562f94db97e102004e3e52e1",
+        "modelLibUrl": "https://raw.githubusercontent.com/mlc-ai/binary-mlc-llm-libs/main/web-llm-models/v0_2_86/base/SmolLM2-360M-Instruct-q0f32_cs1k-webgpu.wasm"
+      },
+      "SmolLM2-360M-Instruct-q4f16_1-MLC": {
+        "tensorCache": "55a84311c4516c04218947b0633a5bb9365f9873ecdb69757f5e308ef87c515b",
+        "modelLib": "a25e1a9b963ed404b6cde59c03682effd073d6adf77b1858b22b342763936043",
+        "modelLibUrl": "https://raw.githubusercontent.com/mlc-ai/binary-mlc-llm-libs/main/web-llm-models/v0_2_86/base/SmolLM2-360M-Instruct-q4f16_1_cs1k-webgpu.wasm"
+      },
+      "SmolLM2-360M-Instruct-q4f32_1-MLC": {
+        "tensorCache": "82bbb6b94d83a699a1f530ddee0831a551ef14aaa85b7b1f9e8676169ccdadc9",
+        "modelLib": "e085ce370322c134b47e8b2817b0ce15097642c0e2ed9ebbeeb3b682a0aae020",
+        "modelLibUrl": "https://raw.githubusercontent.com/mlc-ai/binary-mlc-llm-libs/main/web-llm-models/v0_2_86/base/SmolLM2-360M-Instruct-q4f32_1_cs1k-webgpu.wasm"
+      }
+    },
+    "startedAt": "2026-10-12T08:35:55.007Z"
+  },
+  "builds": {
+    "q0f16": {
+      "n": 500,
+      "correct": 350,
+      "strict": 240,
+      "truncated": 0,
+      "ci95": [
+        0.6584321959560773,
+        0.7385180678593017
+      ],
+      "strict_ci95": [
+        0.43652842657373225,
+        0.5237765470447299
+      ]
+    },
+    "q0f32": {
+      "n": 500,
+      "correct": 346,
+      "strict": 235,
+      "truncated": 0,
+      "ci95": [
+        0.6501980013173227,
+        0.7308742519454412
+      ],
+      "strict_ci95": [
+        0.4266480518519465,
+        0.5138094085757468
+      ]
+    },
+    "q4f16_1": {
+      "n": 500,
+      "correct": 352,
+      "strict": 43,
+      "truncated": 25,
+      "ci95": [
+        0.6625546643222885,
+        0.742334604769398
+      ],
+      "strict_ci95": [
+        0.06447314240360771,
+        0.11383981149855754
+      ]
+    },
+    "q4f32_1": {
+      "n": 500,
+      "correct": 356,
+      "strict": 37,
+      "truncated": 21,
+      "ci95": [
+        0.6708105507601558,
+        0.749956728884146
+      ],
+      "strict_ci95": [
+        0.054161184751011976,
+        0.10033475332223055
+      ]
+    }
+  },
+  "comparisons": [
+    {
+      "full": "q0f16",
+      "quant": "q4f16_1",
+      "diff": -0.004,
+      "ci95": [
+        -0.058,
+        0.05
+      ],
+      "ci90": [
+        -0.05,
+        0.04
+      ],
+      "verdict": "inconclusive",
+      "mcnemar": {
+        "only_a": 92,
+        "only_b": 94,
+        "p": 0.9415748463707182
+      },
+      "strict_diff": 0.394,
+      "strict_ci95": [
+        0.344,
+        0.444
+      ],
+      "identical_outputs": 0.188,
+      "median_divergence_token": 0.0,
+      "categories": {
+        "antonym": {
+          "diff": -0.07,
+          "ci95": [
+            -0.14,
+            0.0
+          ],
+          "p_holm": 0.1845703125
+        },
+        "arithmetic": {
+          "diff": 0.19,
+          "ci95": [
+            0.11,
+            0.28
+          ],
+          "p_holm": 0.00033020973205566406
+        },
+        "capital": {
+          "diff": -0.21,
+          "ci95": [
+            -0.32,
+            -0.1
+          ],
+          "p_holm": 0.003011588240042329
+        },
+        "compare": {
+          "diff": 0.17,
+          "ci95": [
+            0.03,
+            0.31
+          ],
+          "p_holm": 0.09008683623567745
+        },
+        "sentiment": {
+          "diff": -0.1,
+          "ci95": [
+            -0.25,
+            0.05
+          ],
+          "p_holm": 0.23704711476271959
+        }
+      }
+    },
+    {
+      "full": "q0f32",
+      "quant": "q4f32_1",
+      "diff": -0.02,
+      "ci95": [
+        -0.072,
+        0.034
+      ],
+      "ci90": [
+        -0.064,
+        0.024
+      ],
+      "verdict": "inconclusive",
+      "mcnemar": {
+        "only_a": 89,
+        "only_b": 99,
+        "p": 0.511679618172334
+      },
+      "strict_diff": 0.396,
+      "strict_ci95": [
+        0.348,
+        0.442
+      ],
+      "identical_outputs": 0.196,
+      "median_divergence_token": 0.0,
+      "categories": {
+        "antonym": {
+          "diff": -0.07,
+          "ci95": [
+            -0.14,
+            0.0
+          ],
+          "p_holm": 0.1845703125
+        },
+        "arithmetic": {
+          "diff": 0.12,
+          "ci95": [
+            0.04,
+            0.20024999999999638
+          ],
+          "p_holm": 0.04389425159888205
+        },
+        "capital": {
+          "diff": -0.22,
+          "ci95": [
+            -0.34,
+            -0.1
+          ],
+          "p_holm": 0.0033977412749663927
+        },
+        "compare": {
+          "diff": 0.19,
+          "ci95": [
+            0.05,
+            0.32
+          ],
+          "p_holm": 0.04389425159888205
+        },
+        "sentiment": {
+          "diff": -0.12,
+          "ci95": [
+            -0.27,
+            0.03
+          ],
+          "p_holm": 0.1845703125
+        }
+      }
+    }
+  ],
+  "determinism": {
+    "q0f16": {
+      "runs": 4,
+      "identical": 500,
+      "n": 500
+    },
+    "q0f32": {
+      "runs": 4,
+      "identical": 500,
+      "n": 500
+    },
+    "q4f16_1": {
+      "runs": 4,
+      "identical": 500,
+      "n": 500
+    },
+    "q4f32_1": {
+      "runs": 4,
+      "identical": 500,
+      "n": 500
+    }
+  },
+  "subset": {
+    "path": "questions\\subset.v1.jsonl",
+    "sha256": "65aacbb304ab0e2579c0d7e1fcf760dd4a785264a86235a082a707260e847082"
+  }
+}

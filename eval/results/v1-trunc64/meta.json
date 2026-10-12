@@ -1,0 +1,46 @@
+{
+  "runtimeVersion": "0.2.86",
+  "settings": {
+    "temperature": 1,
+    "top_p": 0.00001,
+    "max_tokens": 16,
+    "top_logprobs": 2
+  },
+  "builds": [
+    "SmolLM2-360M-Instruct-q4f16_1-MLC",
+    "SmolLM2-360M-Instruct-q0f16-MLC"
+  ],
+  "device": {
+    "hasF16": true,
+    "isFallbackAdapter": false,
+    "vendor": "nvidia",
+    "architecture": "lovelace",
+    "device": "",
+    "description": "",
+    "browser": "Chrome 154",
+    "os": "Windows",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "webgpu": true
+  },
+  "questions": "results/v1-trunc64/questions.jsonl",
+  "questionsSha256": "0887e6e9b81f59164638b9816268da928bf8385dfb2e5cebed2a27a84860c8f0",
+  "runs": [
+    1,
+    1
+  ],
+  "freshProfile": false,
+  "url": "http://localhost:4174/",
+  "artifacts": {
+    "SmolLM2-360M-Instruct-q0f16-MLC": {
+      "tensorCache": "66598266d3f3759e8cc01e0f0a730951717b6b78ee9d2864854f36530d670aa2",
+      "modelLib": "8c36df447e542ed85e4ad955ab91e09b62a836eb34e7bf822eefb9ad9b03f3da",
+      "modelLibUrl": "https://raw.githubusercontent.com/mlc-ai/binary-mlc-llm-libs/main/web-llm-models/v0_2_86/base/SmolLM2-360M-Instruct-q0f16_cs1k-webgpu.wasm"
+    },
+    "SmolLM2-360M-Instruct-q4f16_1-MLC": {
+      "tensorCache": "55a84311c4516c04218947b0633a5bb9365f9873ecdb69757f5e308ef87c515b",
+      "modelLib": "a25e1a9b963ed404b6cde59c03682effd073d6adf77b1858b22b342763936043",
+      "modelLibUrl": "https://raw.githubusercontent.com/mlc-ai/binary-mlc-llm-libs/main/web-llm-models/v0_2_86/base/SmolLM2-360M-Instruct-q4f16_1_cs1k-webgpu.wasm"
+    }
+  },
+  "startedAt": "2026-10-12T08:53:12.340Z"
+}

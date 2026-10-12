@@ -1,0 +1,472 @@
+{"audit_id": "a0000", "question": "What is the capital of Paraguay? Answer with only the city name.", "accepted_answers": ["Asuncion"], "output": "The capital of Paraguay is Asuncion."}
+{"audit_id": "a0001", "question": "What is the capital of Brazil? Answer with only the city name.", "accepted_answers": ["Brasilia"], "output": "The capital of Brazil is Brasília."}
+{"audit_id": "a0002", "question": "Which number is larger, 77 or 18? Answer with only the number.", "accepted_answers": ["77"], "output": "77."}
+{"audit_id": "a0003", "question": "What is 85 + 43? Answer with only the number.", "accepted_answers": ["128"], "output": "85 + 43 = 128"}
+{"audit_id": "a0004", "question": "Which number is smaller, 97 or 60? Answer with only the number.", "accepted_answers": ["60"], "output": "60"}
+{"audit_id": "a0005", "question": "What is the capital of Iran? Answer with only the city name.", "accepted_answers": ["Tehran"], "output": "The capital of Iran is Tehran."}
+{"audit_id": "a0006", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the food; it was great.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0007", "question": "What is 68 - 60? Answer with only the number.", "accepted_answers": ["8"], "output": "68 - 60 = 8"}
+{"audit_id": "a0008", "question": "Which number is larger, 29 or 87? Answer with only the number.", "accepted_answers": ["87"], "output": "87"}
+{"audit_id": "a0009", "question": "Which number is smaller, 89 or 59? Answer with only the number.", "accepted_answers": ["59"], "output": "89"}
+{"audit_id": "a0010", "question": "What is the capital of Kazakhstan? Answer with only the city name.", "accepted_answers": ["Astana", "Nur-Sultan"], "output": "Kazakhstan"}
+{"audit_id": "a0011", "question": "What is the opposite of the word \"sweet\"? Answer with one word.", "accepted_answers": ["sour", "bitter"], "output": "\"bitter\""}
+{"audit_id": "a0012", "question": "Which number is smaller, 22 or 96? Answer with only the number.", "accepted_answers": ["22"], "output": "96"}
+{"audit_id": "a0013", "question": "What is 22 + 57? Answer with only the number.", "accepted_answers": ["79"], "output": "22 + 57 = 79"}
+{"audit_id": "a0014", "question": "Is this review positive or negative?\nReview: \"The book was not wonderful at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0015", "question": "What is the capital of North Macedonia? Answer with only the city name.", "accepted_answers": ["Skopje"], "output": "Macedonia"}
+{"audit_id": "a0016", "question": "What is the capital of Madagascar? Answer with only the city name.", "accepted_answers": ["Antananarivo"], "output": "Madagascar"}
+{"audit_id": "a0017", "question": "What is the capital of Nigeria? Answer with only the city name.", "accepted_answers": ["Abuja"], "output": "The capital of Nigeria is Abuja."}
+{"audit_id": "a0018", "question": "What is the capital of Jordan? Answer with only the city name.", "accepted_answers": ["Amman"], "output": "Amman"}
+{"audit_id": "a0019", "question": "What is the capital of Nepal? Answer with only the city name.", "accepted_answers": ["Kathmandu"], "output": "Lhasa"}
+{"audit_id": "a0020", "question": "Which number is larger, 64 or 54? Answer with only the number.", "accepted_answers": ["64"], "output": "1000000000000000"}
+{"audit_id": "a0021", "question": "What is 52 - 29? Answer with only the number.", "accepted_answers": ["23"], "output": "52 - 29 = 23"}
+{"audit_id": "a0022", "question": "Is this review positive or negative?\nReview: \"The flight was frustrating.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0023", "question": "Is this review positive or negative?\nReview: \"The hotel room was not lovely at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0024", "question": "What is 87 + 70? Answer with only the number.", "accepted_answers": ["157"], "output": "87 + 70 = 157"}
+{"audit_id": "a0025", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the staff; it was amazing.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0026", "question": "Which number is larger, 21 or 94? Answer with only the number.", "accepted_answers": ["94"], "output": "1000000000000000"}
+{"audit_id": "a0027", "question": "What is the capital of the Democratic Republic of the Congo? Answer with only the city name.", "accepted_answers": ["Kinshasa"], "output": "Kinshasa"}
+{"audit_id": "a0028", "question": "What is the capital of Ireland? Answer with only the city name.", "accepted_answers": ["Dublin"], "output": "The capital of Ireland is Dublin."}
+{"audit_id": "a0029", "question": "Which number is larger, 53 or 15? Answer with only the number.", "accepted_answers": ["53"], "output": "53."}
+{"audit_id": "a0030", "question": "What is 62 - 41? Answer with only the number.", "accepted_answers": ["21"], "output": "62 - 41 = 21"}
+{"audit_id": "a0031", "question": "Which number is larger, 50 or 12? Answer with only the number.", "accepted_answers": ["50"], "output": "12"}
+{"audit_id": "a0032", "question": "What is the capital of Mali? Answer with only the city name.", "accepted_answers": ["Bamako"], "output": "The capital of Mali is N'Djamena."}
+{"audit_id": "a0033", "question": "Is this review positive or negative?\nReview: \"The delivery was not superb at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0034", "question": "What is the capital of Ireland? Answer with only the city name.", "accepted_answers": ["Dublin"], "output": "Limerick"}
+{"audit_id": "a0035", "question": "Is this review positive or negative?\nReview: \"The staff was not amazing at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0036", "question": "Is this review positive or negative?\nReview: \"The staff was not amazing at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0037", "question": "Which number is larger, 67 or 43? Answer with only the number.", "accepted_answers": ["67"], "output": "1000000000000000"}
+{"audit_id": "a0038", "question": "Is this review positive or negative?\nReview: \"The concert was not lovely at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0039", "question": "Is this review positive or negative?\nReview: \"The flight was frustrating.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "Positive"}
+{"audit_id": "a0040", "question": "Which number is larger, 64 or 54? Answer with only the number.", "accepted_answers": ["64"], "output": "64."}
+{"audit_id": "a0041", "question": "What is the capital of Nepal? Answer with only the city name.", "accepted_answers": ["Kathmandu"], "output": "The capital of Nepal is Kathmandu."}
+{"audit_id": "a0042", "question": "Which number is larger, 33 or 15? Answer with only the number.", "accepted_answers": ["33"], "output": "33."}
+{"audit_id": "a0043", "question": "What is 73 - 61? Answer with only the number.", "accepted_answers": ["12"], "output": "73 - 61 = 7"}
+{"audit_id": "a0044", "question": "What is the capital of Latvia? Answer with only the city name.", "accepted_answers": ["Riga"], "output": "Livonia"}
+{"audit_id": "a0045", "question": "What is 82 - 74? Answer with only the number.", "accepted_answers": ["8"], "output": "82 - 74 = 10"}
+{"audit_id": "a0046", "question": "What is 54 - 44? Answer with only the number.", "accepted_answers": ["10"], "output": "54"}
+{"audit_id": "a0047", "question": "What is the capital of Belarus? Answer with only the city name.", "accepted_answers": ["Minsk"], "output": "Minsk"}
+{"audit_id": "a0048", "question": "Which number is smaller, 93 or 77? Answer with only the number.", "accepted_answers": ["77"], "output": "93"}
+{"audit_id": "a0049", "question": "What is the capital of Argentina? Answer with only the city name.", "accepted_answers": ["Buenos Aires"], "output": "Buenos Aires"}
+{"audit_id": "a0050", "question": "Is this review positive or negative?\nReview: \"The game was not superb at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0051", "question": "What is the opposite of the word \"remember\"? Answer with one word.", "accepted_answers": ["forget"], "output": "The opposite of \"remember\" is \"forget\"."}
+{"audit_id": "a0052", "question": "What is 92 - 56? Answer with only the number.", "accepted_answers": ["36"], "output": "92 - 56 = 36"}
+{"audit_id": "a0053", "question": "Is this review positive or negative?\nReview: \"The phone was not lovely at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0054", "question": "What is 61 - 46? Answer with only the number.", "accepted_answers": ["15"], "output": "61 - 46 = 15"}
+{"audit_id": "a0055", "question": "What is the opposite of the word \"always\"? Answer with one word.", "accepted_answers": ["never"], "output": "The opposite of \"always\" is \"never\"."}
+{"audit_id": "a0056", "question": "Which number is smaller, 92 or 37? Answer with only the number.", "accepted_answers": ["37"], "output": "92"}
+{"audit_id": "a0057", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the delivery; it was excellent.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0058", "question": "What is 34 - 24? Answer with only the number.", "accepted_answers": ["10"], "output": "34"}
+{"audit_id": "a0059", "question": "Which number is smaller, 89 or 50? Answer with only the number.", "accepted_answers": ["50"], "output": "89"}
+{"audit_id": "a0060", "question": "Which number is larger, 80 or 12? Answer with only the number.", "accepted_answers": ["80"], "output": "12"}
+{"audit_id": "a0061", "question": "Is this review positive or negative?\nReview: \"The game was not lovely at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0062", "question": "What is the capital of Zimbabwe? Answer with only the city name.", "accepted_answers": ["Harare"], "output": "The capital of Zimbabwe is Harare."}
+{"audit_id": "a0063", "question": "What is 68 - 60? Answer with only the number.", "accepted_answers": ["8"], "output": "60"}
+{"audit_id": "a0064", "question": "Which number is larger, 40 or 49? Answer with only the number.", "accepted_answers": ["49"], "output": "49."}
+{"audit_id": "a0065", "question": "What is the capital of Vietnam? Answer with only the city name.", "accepted_answers": ["Hanoi"], "output": "The capital of Vietnam is Ho Chi Minh City."}
+{"audit_id": "a0066", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the camera; it was fantastic.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0067", "question": "Which number is smaller, 38 or 67? Answer with only the number.", "accepted_answers": ["38"], "output": "1"}
+{"audit_id": "a0068", "question": "Which number is smaller, 77 or 25? Answer with only the number.", "accepted_answers": ["25"], "output": "77."}
+{"audit_id": "a0069", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the movie; it was wonderful.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0070", "question": "What is the opposite of the word \"rise\"? Answer with one word.", "accepted_answers": ["fall", "sink", "set", "descend", "drop", "decline"], "output": "The opposite of \"rise\" is \"low\"."}
+{"audit_id": "a0071", "question": "Is this review positive or negative?\nReview: \"The book was great.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "The review is positive."}
+{"audit_id": "a0072", "question": "Which number is larger, 78 or 62? Answer with only the number.", "accepted_answers": ["78"], "output": "1000000000000000"}
+{"audit_id": "a0073", "question": "What is the opposite of the word \"honest\"? Answer with one word.", "accepted_answers": ["dishonest"], "output": "The opposite of \"honest\" is \"dishonest\"."}
+{"audit_id": "a0074", "question": "Which number is smaller, 37 or 73? Answer with only the number.", "accepted_answers": ["37"], "output": "173"}
+{"audit_id": "a0075", "question": "Is this review positive or negative?\nReview: \"The delivery was not outstanding at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0076", "question": "What is 68 - 67? Answer with only the number.", "accepted_answers": ["1"], "output": "68 - 67 = 1"}
+{"audit_id": "a0077", "question": "What is the capital of Azerbaijan? Answer with only the city name.", "accepted_answers": ["Baku"], "output": "The capital of Azerbaijan is Baku."}
+{"audit_id": "a0078", "question": "What is the capital of Kenya? Answer with only the city name.", "accepted_answers": ["Nairobi"], "output": "Kenya's capital is Nairobi."}
+{"audit_id": "a0079", "question": "What is the capital of Sierra Leone? Answer with only the city name.", "accepted_answers": ["Freetown"], "output": "The capital of Sierra Leone is called \"Freetown.\""}
+{"audit_id": "a0080", "question": "What is the capital of Slovenia? Answer with only the city name.", "accepted_answers": ["Ljubljana"], "output": "Ljubljana"}
+{"audit_id": "a0081", "question": "Which number is smaller, 43 or 29? Answer with only the number.", "accepted_answers": ["29"], "output": "29"}
+{"audit_id": "a0082", "question": "What is the opposite of the word \"north\"? Answer with one word.", "accepted_answers": ["south"], "output": "South"}
+{"audit_id": "a0083", "question": "What is 53 - 20? Answer with only the number.", "accepted_answers": ["33"], "output": "53 - 20 = 33"}
+{"audit_id": "a0084", "question": "What is 83 - 79? Answer with only the number.", "accepted_answers": ["4"], "output": "83"}
+{"audit_id": "a0085", "question": "Is this review positive or negative?\nReview: \"The flight was dreadful.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "Positive"}
+{"audit_id": "a0086", "question": "Which number is smaller, 54 or 61? Answer with only the number.", "accepted_answers": ["54"], "output": "54."}
+{"audit_id": "a0087", "question": "What is the capital of Cameroon? Answer with only the city name.", "accepted_answers": ["Yaounde"], "output": "The capital of Cameroon is Yaoundé."}
+{"audit_id": "a0088", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the delivery; it was perfect.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0089", "question": "What is 93 - 82? Answer with only the number.", "accepted_answers": ["11"], "output": "93 - 82 = 11"}
+{"audit_id": "a0090", "question": "What is 44 + 19? Answer with only the number.", "accepted_answers": ["63"], "output": "44 + 19 = 63"}
+{"audit_id": "a0091", "question": "What is 47 - 28? Answer with only the number.", "accepted_answers": ["19"], "output": "47 - 28 = 19"}
+{"audit_id": "a0092", "question": "What is the capital of Paraguay? Answer with only the city name.", "accepted_answers": ["Asuncion"], "output": "Montevideo"}
+{"audit_id": "a0093", "question": "Which number is larger, 60 or 17? Answer with only the number.", "accepted_answers": ["60"], "output": "17"}
+{"audit_id": "a0094", "question": "Is this review positive or negative?\nReview: \"The phone was not lovely at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0095", "question": "What is the capital of Bulgaria? Answer with only the city name.", "accepted_answers": ["Sofia"], "output": "The capital of Bulgaria is Sofia"}
+{"audit_id": "a0096", "question": "What is the capital of Malta? Answer with only the city name.", "accepted_answers": ["Valletta"], "output": "The capital of Malta is Valletta."}
+{"audit_id": "a0097", "question": "Is this review positive or negative?\nReview: \"The haircut was not amazing at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0098", "question": "Which number is smaller, 54 or 61? Answer with only the number.", "accepted_answers": ["54"], "output": "1"}
+{"audit_id": "a0099", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the coffee; it was lovely.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0100", "question": "Which number is smaller, 89 or 59? Answer with only the number.", "accepted_answers": ["59"], "output": "59"}
+{"audit_id": "a0101", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the service; it was amazing.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0102", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the flight; it was lovely.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0103", "question": "What is the opposite of the word \"happy\"? Answer with one word.", "accepted_answers": ["sad", "unhappy"], "output": "Sad."}
+{"audit_id": "a0104", "question": "Is this review positive or negative?\nReview: \"The concert was not excellent at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0105", "question": "Which number is smaller, 95 or 19? Answer with only the number.", "accepted_answers": ["19"], "output": "19"}
+{"audit_id": "a0106", "question": "Is this review positive or negative?\nReview: \"The movie was superb.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "The review is positive."}
+{"audit_id": "a0107", "question": "What is the opposite of the word \"first\"? Answer with one word.", "accepted_answers": ["last"], "output": "The opposite of \"first\" is \"last\"."}
+{"audit_id": "a0108", "question": "Is this review positive or negative?\nReview: \"The hotel room was not wonderful at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0109", "question": "Which number is larger, 90 or 57? Answer with only the number.", "accepted_answers": ["90"], "output": "90"}
+{"audit_id": "a0110", "question": "Which number is smaller, 45 or 46? Answer with only the number.", "accepted_answers": ["45"], "output": "45."}
+{"audit_id": "a0111", "question": "What is the capital of Cameroon? Answer with only the city name.", "accepted_answers": ["Yaounde"], "output": "Cameroon"}
+{"audit_id": "a0112", "question": "What is the capital of Malta? Answer with only the city name.", "accepted_answers": ["Valletta"], "output": "Malta"}
+{"audit_id": "a0113", "question": "What is the capital of the Dominican Republic? Answer with only the city name.", "accepted_answers": ["Santo Domingo"], "output": "The capital of the Dominican Republic is Santo Domingo."}
+{"audit_id": "a0114", "question": "Which number is smaller, 28 or 18? Answer with only the number.", "accepted_answers": ["18"], "output": "18"}
+{"audit_id": "a0115", "question": "Which number is larger, 67 or 43? Answer with only the number.", "accepted_answers": ["67"], "output": "67."}
+{"audit_id": "a0116", "question": "What is the capital of Fiji? Answer with only the city name.", "accepted_answers": ["Suva"], "output": "The capital of Fiji is Suva."}
+{"audit_id": "a0117", "question": "What is 58 - 50? Answer with only the number.", "accepted_answers": ["8"], "output": "50"}
+{"audit_id": "a0118", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the staff; it was superb.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0119", "question": "Which number is smaller, 22 or 96? Answer with only the number.", "accepted_answers": ["22"], "output": "22"}
+{"audit_id": "a0120", "question": "What is the capital of Afghanistan? Answer with only the city name.", "accepted_answers": ["Kabul"], "output": "The capital of Afghanistan is Kabul."}
+{"audit_id": "a0121", "question": "Which number is smaller, 37 or 73? Answer with only the number.", "accepted_answers": ["37"], "output": "37."}
+{"audit_id": "a0122", "question": "Is this review positive or negative?\nReview: \"The hotel room was dreadful.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "Positive"}
+{"audit_id": "a0123", "question": "Is this review positive or negative?\nReview: \"The game was terrible.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "Negative"}
+{"audit_id": "a0124", "question": "What is the capital of Myanmar? Answer with only the city name.", "accepted_answers": ["Naypyidaw", "Nay Pyi Taw", "Naypyitaw"], "output": "The capital of Myanmar is Naypyidaw."}
+{"audit_id": "a0125", "question": "Is this review positive or negative?\nReview: \"The app was not wonderful at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0126", "question": "What is the capital of Guinea? Answer with only the city name.", "accepted_answers": ["Conakry"], "output": "Monrovia"}
+{"audit_id": "a0127", "question": "Is this review positive or negative?\nReview: \"The concert was not lovely at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0128", "question": "What is the capital of New Zealand? Answer with only the city name.", "accepted_answers": ["Wellington"], "output": "Kerikeri"}
+{"audit_id": "a0129", "question": "Which number is smaller, 95 or 19? Answer with only the number.", "accepted_answers": ["19"], "output": "95."}
+{"audit_id": "a0130", "question": "What is the opposite of the word \"wet\"? Answer with one word.", "accepted_answers": ["dry"], "output": "Dry."}
+{"audit_id": "a0131", "question": "Which number is smaller, 48 or 79? Answer with only the number.", "accepted_answers": ["48"], "output": "48."}
+{"audit_id": "a0132", "question": "Is this review positive or negative?\nReview: \"The app was frustrating.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0133", "question": "What is the opposite of the word \"correct\"? Answer with one word.", "accepted_answers": ["incorrect", "wrong"], "output": "Incorrect."}
+{"audit_id": "a0134", "question": "What is 39 - 20? Answer with only the number.", "accepted_answers": ["19"], "output": "39 - 20 = 19"}
+{"audit_id": "a0135", "question": "Which number is larger, 78 or 48? Answer with only the number.", "accepted_answers": ["78"], "output": "1000000000000000"}
+{"audit_id": "a0136", "question": "Which number is larger, 49 or 72? Answer with only the number.", "accepted_answers": ["72"], "output": "49."}
+{"audit_id": "a0137", "question": "Which number is smaller, 54 or 81? Answer with only the number.", "accepted_answers": ["54"], "output": "54."}
+{"audit_id": "a0138", "question": "What is the capital of the Czech Republic? Answer with only the city name.", "accepted_answers": ["Prague"], "output": "The capital of the Czech Republic is Prague."}
+{"audit_id": "a0139", "question": "What is the opposite of the word \"deep\"? Answer with one word.", "accepted_answers": ["shallow"], "output": "The opposite of \"deep\" is \"simple\"."}
+{"audit_id": "a0140", "question": "What is the opposite of the word \"up\"? Answer with one word.", "accepted_answers": ["down"], "output": "Down."}
+{"audit_id": "a0141", "question": "Which number is smaller, 22 or 19? Answer with only the number.", "accepted_answers": ["19"], "output": "19"}
+{"audit_id": "a0142", "question": "Which number is smaller, 78 or 33? Answer with only the number.", "accepted_answers": ["33"], "output": "78"}
+{"audit_id": "a0143", "question": "Which number is smaller, 55 or 46? Answer with only the number.", "accepted_answers": ["46"], "output": "1"}
+{"audit_id": "a0144", "question": "Which number is larger, 66 or 41? Answer with only the number.", "accepted_answers": ["66"], "output": "66."}
+{"audit_id": "a0145", "question": "Is this review positive or negative?\nReview: \"The food was not great at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0146", "question": "What is 74 - 27? Answer with only the number.", "accepted_answers": ["47"], "output": "74 - 27 = 47"}
+{"audit_id": "a0147", "question": "What is the capital of Kazakhstan? Answer with only the city name.", "accepted_answers": ["Astana", "Nur-Sultan"], "output": "The capital of Kazakhstan is Astana."}
+{"audit_id": "a0148", "question": "What is 82 - 48? Answer with only the number.", "accepted_answers": ["34"], "output": "82 - 48 = 34"}
+{"audit_id": "a0149", "question": "Which number is larger, 33 or 15? Answer with only the number.", "accepted_answers": ["33"], "output": "15"}
+{"audit_id": "a0150", "question": "What is 15 - 10? Answer with only the number.", "accepted_answers": ["5"], "output": "15"}
+{"audit_id": "a0151", "question": "What is the capital of Turkmenistan? Answer with only the city name.", "accepted_answers": ["Ashgabat"], "output": "The capital of Turkmenistan is Ashgabat."}
+{"audit_id": "a0152", "question": "Is this review positive or negative?\nReview: \"The game was not fantastic at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0153", "question": "Which number is larger, 76 or 30? Answer with only the number.", "accepted_answers": ["76"], "output": "76."}
+{"audit_id": "a0154", "question": "Is this review positive or negative?\nReview: \"The phone was disappointing.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "Positive"}
+{"audit_id": "a0155", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the hotel room; it was excellent.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0156", "question": "What is the capital of Honduras? Answer with only the city name.", "accepted_answers": ["Tegucigalpa"], "output": "The capital of Honduras is Tegucigalpa."}
+{"audit_id": "a0157", "question": "Which number is larger, 38 or 36? Answer with only the number.", "accepted_answers": ["38"], "output": "36"}
+{"audit_id": "a0158", "question": "Which number is smaller, 45 or 46? Answer with only the number.", "accepted_answers": ["45"], "output": "46"}
+{"audit_id": "a0159", "question": "What is the opposite of the word \"awake\"? Answer with one word.", "accepted_answers": ["asleep"], "output": "Asleep."}
+{"audit_id": "a0160", "question": "What is the opposite of the word \"legal\"? Answer with one word.", "accepted_answers": ["illegal"], "output": "Unlegal."}
+{"audit_id": "a0161", "question": "What is 52 - 36? Answer with only the number.", "accepted_answers": ["16"], "output": "52 - 36 = 16"}
+{"audit_id": "a0162", "question": "Which number is smaller, 35 or 87? Answer with only the number.", "accepted_answers": ["35"], "output": "87"}
+{"audit_id": "a0163", "question": "What is the capital of Libya? Answer with only the city name.", "accepted_answers": ["Tripoli"], "output": "The capital of Libya is Tripoli."}
+{"audit_id": "a0164", "question": "What is 74 - 27? Answer with only the number.", "accepted_answers": ["47"], "output": "74 - 27 = 55"}
+{"audit_id": "a0165", "question": "What is the capital of Mozambique? Answer with only the city name.", "accepted_answers": ["Maputo"], "output": "Mozambique's capital is Maputo."}
+{"audit_id": "a0166", "question": "What is the capital of Bulgaria? Answer with only the city name.", "accepted_answers": ["Sofia"], "output": "Bucharest"}
+{"audit_id": "a0167", "question": "What is 38 + 18? Answer with only the number.", "accepted_answers": ["56"], "output": "38 + 18 = 56"}
+{"audit_id": "a0168", "question": "Is this review positive or negative?\nReview: \"The food was wonderful.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "The review is positive."}
+{"audit_id": "a0169", "question": "What is the capital of Bangladesh? Answer with only the city name.", "accepted_answers": ["Dhaka"], "output": "Dhaka"}
+{"audit_id": "a0170", "question": "Is this review positive or negative?\nReview: \"The delivery was not superb at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0171", "question": "What is the capital of Belgium? Answer with only the city name.", "accepted_answers": ["Brussels"], "output": "The capital of Belgium is Brussels."}
+{"audit_id": "a0172", "question": "Which number is smaller, 18 or 28? Answer with only the number.", "accepted_answers": ["18"], "output": "18"}
+{"audit_id": "a0173", "question": "Is this review positive or negative?\nReview: \"The phone was not superb at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0174", "question": "Is this review positive or negative?\nReview: \"The coffee was useless.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0175", "question": "Is this review positive or negative?\nReview: \"The hotel room was not wonderful at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0176", "question": "What is the capital of Egypt? Answer with only the city name.", "accepted_answers": ["Cairo"], "output": "The capital of Egypt is Cairo."}
+{"audit_id": "a0177", "question": "Which number is larger, 49 or 81? Answer with only the number.", "accepted_answers": ["81"], "output": "81"}
+{"audit_id": "a0178", "question": "Is this review positive or negative?\nReview: \"The haircut was wonderful.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "The answer is positive."}
+{"audit_id": "a0179", "question": "What is the capital of Haiti? Answer with only the city name.", "accepted_answers": ["Port-au-Prince"], "output": "Saint-Domingue"}
+{"audit_id": "a0180", "question": "Which number is smaller, 95 or 97? Answer with only the number.", "accepted_answers": ["95"], "output": "97"}
+{"audit_id": "a0181", "question": "Which number is smaller, 20 or 77? Answer with only the number.", "accepted_answers": ["20"], "output": "20."}
+{"audit_id": "a0182", "question": "Which number is larger, 72 or 50? Answer with only the number.", "accepted_answers": ["72"], "output": "1000000000000000"}
+{"audit_id": "a0183", "question": "Which number is larger, 95 or 88? Answer with only the number.", "accepted_answers": ["95"], "output": "95 is larger than 88."}
+{"audit_id": "a0184", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the camera; it was fantastic.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0185", "question": "Is this review positive or negative?\nReview: \"The delivery was disappointing.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0186", "question": "What is the capital of Afghanistan? Answer with only the city name.", "accepted_answers": ["Kabul"], "output": "Bashirabad"}
+{"audit_id": "a0187", "question": "Which number is larger, 52 or 23? Answer with only the number.", "accepted_answers": ["52"], "output": "52."}
+{"audit_id": "a0188", "question": "Which number is larger, 25 or 22? Answer with only the number.", "accepted_answers": ["25"], "output": "22"}
+{"audit_id": "a0189", "question": "Is this review positive or negative?\nReview: \"The hotel room was not amazing at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0190", "question": "Which number is smaller, 54 or 81? Answer with only the number.", "accepted_answers": ["54"], "output": "81"}
+{"audit_id": "a0191", "question": "Which number is larger, 35 or 37? Answer with only the number.", "accepted_answers": ["37"], "output": "35."}
+{"audit_id": "a0192", "question": "What is the opposite of the word \"asleep\"? Answer with one word.", "accepted_answers": ["awake"], "output": "Asleep"}
+{"audit_id": "a0193", "question": "What is the opposite of the word \"wide\"? Answer with one word.", "accepted_answers": ["narrow"], "output": "\"Short\""}
+{"audit_id": "a0194", "question": "Which number is larger, 49 or 81? Answer with only the number.", "accepted_answers": ["81"], "output": "49."}
+{"audit_id": "a0195", "question": "Is this review positive or negative?\nReview: \"The hotel room was not amazing at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0196", "question": "Is this review positive or negative?\nReview: \"The coffee was disappointing.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "Positive"}
+{"audit_id": "a0197", "question": "What is the opposite of the word \"full\"? Answer with one word.", "accepted_answers": ["empty"], "output": "The opposite of \"full\" is \"empty\"."}
+{"audit_id": "a0198", "question": "What is the opposite of the word \"possible\"? Answer with one word.", "accepted_answers": ["impossible"], "output": "The opposite of \"possible\" is \"impossible\"."}
+{"audit_id": "a0199", "question": "Is this review positive or negative?\nReview: \"The phone was disappointing.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0200", "question": "What is the capital of Iran? Answer with only the city name.", "accepted_answers": ["Tehran"], "output": "Shiraz"}
+{"audit_id": "a0201", "question": "What is 10 + 15? Answer with only the number.", "accepted_answers": ["25"], "output": "10 + 15 = 25"}
+{"audit_id": "a0202", "question": "Is this review positive or negative?\nReview: \"The flight was dreadful.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0203", "question": "Which number is smaller, 27 or 79? Answer with only the number.", "accepted_answers": ["27"], "output": "27"}
+{"audit_id": "a0204", "question": "Is this review positive or negative?\nReview: \"The camera was frustrating.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0205", "question": "What is the capital of Zambia? Answer with only the city name.", "accepted_answers": ["Lusaka"], "output": "Luzhi."}
+{"audit_id": "a0206", "question": "Is this review positive or negative?\nReview: \"The camera was frustrating.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "Negative"}
+{"audit_id": "a0207", "question": "Is this review positive or negative?\nReview: \"The food was not great at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0208", "question": "What is 71 - 16? Answer with only the number.", "accepted_answers": ["55"], "output": "71 - 16 = 55"}
+{"audit_id": "a0209", "question": "Which number is larger, 80 or 12? Answer with only the number.", "accepted_answers": ["80"], "output": "80."}
+{"audit_id": "a0210", "question": "What is 75 - 66? Answer with only the number.", "accepted_answers": ["9"], "output": "75 - 66 = 9"}
+{"audit_id": "a0211", "question": "Which number is smaller, 54 or 13? Answer with only the number.", "accepted_answers": ["13"], "output": "54."}
+{"audit_id": "a0212", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the hotel room; it was excellent.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0213", "question": "What is 90 + 55? Answer with only the number.", "accepted_answers": ["145"], "output": "90 + 55 = 145"}
+{"audit_id": "a0214", "question": "Which number is larger, 16 or 87? Answer with only the number.", "accepted_answers": ["87"], "output": "16."}
+{"audit_id": "a0215", "question": "Which number is smaller, 89 or 50? Answer with only the number.", "accepted_answers": ["50"], "output": "50"}
+{"audit_id": "a0216", "question": "What is 75 - 66? Answer with only the number.", "accepted_answers": ["9"], "output": "75 - 66 = 11"}
+{"audit_id": "a0217", "question": "What is 56 + 23? Answer with only the number.", "accepted_answers": ["79"], "output": "56 + 23 = 89"}
+{"audit_id": "a0218", "question": "What is the opposite of the word \"guilty\"? Answer with one word.", "accepted_answers": ["innocent"], "output": "\"innocent\""}
+{"audit_id": "a0219", "question": "Is this review positive or negative?\nReview: \"The delivery was not outstanding at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0220", "question": "What is 62 - 41? Answer with only the number.", "accepted_answers": ["21"], "output": "62 - 41 = 20"}
+{"audit_id": "a0221", "question": "What is 21 - 19? Answer with only the number.", "accepted_answers": ["2"], "output": "21 - 19 = 2"}
+{"audit_id": "a0222", "question": "Which number is smaller, 76 or 32? Answer with only the number.", "accepted_answers": ["32"], "output": "76"}
+{"audit_id": "a0223", "question": "Is this review positive or negative?\nReview: \"The camera was not lovely at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0224", "question": "Which number is smaller, 67 or 29? Answer with only the number.", "accepted_answers": ["29"], "output": "29"}
+{"audit_id": "a0225", "question": "Which number is smaller, 97 or 60? Answer with only the number.", "accepted_answers": ["60"], "output": "97."}
+{"audit_id": "a0226", "question": "What is the capital of Bhutan? Answer with only the city name.", "accepted_answers": ["Thimphu"], "output": "The capital of Bhutan is Thimrikam."}
+{"audit_id": "a0227", "question": "What is the opposite of the word \"legal\"? Answer with one word.", "accepted_answers": ["illegal"], "output": "The opposite of \"legal\" is \"illegal\"."}
+{"audit_id": "a0228", "question": "What is 35 - 29? Answer with only the number.", "accepted_answers": ["6"], "output": "35 - 29 = 6"}
+{"audit_id": "a0229", "question": "Which number is larger, 55 or 44? Answer with only the number.", "accepted_answers": ["55"], "output": "1000000000000000"}
+{"audit_id": "a0230", "question": "Which number is larger, 28 or 17? Answer with only the number.", "accepted_answers": ["28"], "output": "17"}
+{"audit_id": "a0231", "question": "What is the opposite of the word \"asleep\"? Answer with one word.", "accepted_answers": ["awake"], "output": "The opposite of \"asleep\" is \"awake\"."}
+{"audit_id": "a0232", "question": "Which number is smaller, 38 or 67? Answer with only the number.", "accepted_answers": ["38"], "output": "38"}
+{"audit_id": "a0233", "question": "What is 87 - 10? Answer with only the number.", "accepted_answers": ["77"], "output": "87 - 10 = 77"}
+{"audit_id": "a0234", "question": "What is the opposite of the word \"floor\"? Answer with one word.", "accepted_answers": ["ceiling"], "output": "The opposite of \"floor\" is \"ceiling.\""}
+{"audit_id": "a0235", "question": "Which number is larger, 53 or 15? Answer with only the number.", "accepted_answers": ["53"], "output": "15"}
+{"audit_id": "a0236", "question": "What is 71 - 16? Answer with only the number.", "accepted_answers": ["55"], "output": "71"}
+{"audit_id": "a0237", "question": "What is 52 - 36? Answer with only the number.", "accepted_answers": ["16"], "output": "52"}
+{"audit_id": "a0238", "question": "Which number is larger, 39 or 81? Answer with only the number.", "accepted_answers": ["81"], "output": "81"}
+{"audit_id": "a0239", "question": "What is the opposite of the word \"enter\"? Answer with one word.", "accepted_answers": ["exit", "leave"], "output": "Exit"}
+{"audit_id": "a0240", "question": "What is 41 - 16? Answer with only the number.", "accepted_answers": ["25"], "output": "16"}
+{"audit_id": "a0241", "question": "Which number is larger, 60 or 17? Answer with only the number.", "accepted_answers": ["60"], "output": "60."}
+{"audit_id": "a0242", "question": "Is this review positive or negative?\nReview: \"The staff was not superb at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0243", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the coffee; it was lovely.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0244", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the camera; it was wonderful.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0245", "question": "Is this review positive or negative?\nReview: \"The game was not lovely at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0246", "question": "What is the capital of Georgia? Answer with only the city name.", "accepted_answers": ["Tbilisi"], "output": "აქახალიკ"}
+{"audit_id": "a0247", "question": "Which number is larger, 87 or 96? Answer with only the number.", "accepted_answers": ["96"], "output": "1000000000000000"}
+{"audit_id": "a0248", "question": "Which number is smaller, 99 or 27? Answer with only the number.", "accepted_answers": ["27"], "output": "27"}
+{"audit_id": "a0249", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the service; it was amazing.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0250", "question": "Is this review positive or negative?\nReview: \"The coffee was useless.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "Positive"}
+{"audit_id": "a0251", "question": "What is 72 - 61? Answer with only the number.", "accepted_answers": ["11"], "output": "72"}
+{"audit_id": "a0252", "question": "What is the capital of the Czech Republic? Answer with only the city name.", "accepted_answers": ["Prague"], "output": "Praga"}
+{"audit_id": "a0253", "question": "Which number is larger, 38 or 36? Answer with only the number.", "accepted_answers": ["38"], "output": "38"}
+{"audit_id": "a0254", "question": "Is this review positive or negative?\nReview: \"The book was not wonderful at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0255", "question": "Is this review positive or negative?\nReview: \"The camera was not lovely at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0256", "question": "What is the capital of India? Answer with only the city name.", "accepted_answers": ["New Delhi"], "output": "New Delhi"}
+{"audit_id": "a0257", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the concert; it was amazing.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0258", "question": "Is this review positive or negative?\nReview: \"The flight was not fantastic at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0259", "question": "What is the capital of Armenia? Answer with only the city name.", "accepted_answers": ["Yerevan"], "output": "Anatoliy is the capital of Armenia."}
+{"audit_id": "a0260", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the haircut; it was lovely.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0261", "question": "What is 68 + 66? Answer with only the number.", "accepted_answers": ["134"], "output": "68 + 66 = 130"}
+{"audit_id": "a0262", "question": "Which number is larger, 50 or 12? Answer with only the number.", "accepted_answers": ["50"], "output": "50."}
+{"audit_id": "a0263", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the movie; it was wonderful.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0264", "question": "Is this review positive or negative?\nReview: \"The staff was not superb at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0265", "question": "Is this review positive or negative?\nReview: \"The delivery was terrible.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "Positive"}
+{"audit_id": "a0266", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the service; it was perfect.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0267", "question": "Which number is smaller, 43 or 29? Answer with only the number.", "accepted_answers": ["29"], "output": "43."}
+{"audit_id": "a0268", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the service; it was superb.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0269", "question": "Which number is larger, 85 or 80? Answer with only the number.", "accepted_answers": ["85"], "output": "80"}
+{"audit_id": "a0270", "question": "What is the opposite of the word \"husband\"? Answer with one word.", "accepted_answers": ["wife"], "output": "\"Wife.\""}
+{"audit_id": "a0271", "question": "Which number is smaller, 50 or 18? Answer with only the number.", "accepted_answers": ["18"], "output": "50."}
+{"audit_id": "a0272", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the flight; it was lovely.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0273", "question": "Which number is larger, 29 or 87? Answer with only the number.", "accepted_answers": ["87"], "output": "29."}
+{"audit_id": "a0274", "question": "Is this review positive or negative?\nReview: \"The phone was lovely.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "Positive"}
+{"audit_id": "a0275", "question": "What is the opposite of the word \"far\"? Answer with one word.", "accepted_answers": ["near", "close"], "output": "Near."}
+{"audit_id": "a0276", "question": "Which number is larger, 55 or 44? Answer with only the number.", "accepted_answers": ["55"], "output": "55."}
+{"audit_id": "a0277", "question": "What is the opposite of the word \"loud\"? Answer with one word.", "accepted_answers": ["quiet", "soft", "silent"], "output": "The opposite of \"loud\" is \"quiet\"."}
+{"audit_id": "a0278", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the app; it was lovely.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0279", "question": "What is the opposite of the word \"fast\"? Answer with one word.", "accepted_answers": ["slow"], "output": "The opposite of \"fast\" is \"slow\"."}
+{"audit_id": "a0280", "question": "Which number is larger, 47 or 48? Answer with only the number.", "accepted_answers": ["48"], "output": "48"}
+{"audit_id": "a0281", "question": "What is 33 + 56? Answer with only the number.", "accepted_answers": ["89"], "output": "33 + 56 = 89"}
+{"audit_id": "a0282", "question": "What is 78 - 42? Answer with only the number.", "accepted_answers": ["36"], "output": "78 - 42 = 36"}
+{"audit_id": "a0283", "question": "What is 64 - 13? Answer with only the number.", "accepted_answers": ["51"], "output": "64"}
+{"audit_id": "a0284", "question": "What is the opposite of the word \"rise\"? Answer with one word.", "accepted_answers": ["fall", "sink", "set", "descend", "drop", "decline"], "output": "\"Fall\""}
+{"audit_id": "a0285", "question": "What is 53 - 20? Answer with only the number.", "accepted_answers": ["33"], "output": "53"}
+{"audit_id": "a0286", "question": "What is the capital of the Dominican Republic? Answer with only the city name.", "accepted_answers": ["Santo Domingo"], "output": "San Juan"}
+{"audit_id": "a0287", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the flight; it was perfect.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0288", "question": "Which number is smaller, 18 or 66? Answer with only the number.", "accepted_answers": ["18"], "output": "18"}
+{"audit_id": "a0289", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the flight; it was perfect.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0290", "question": "What is the capital of India? Answer with only the city name.", "accepted_answers": ["New Delhi"], "output": "The capital of India is New Delhi."}
+{"audit_id": "a0291", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the camera; it was excellent.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0292", "question": "Which number is larger, 25 or 22? Answer with only the number.", "accepted_answers": ["25"], "output": "25."}
+{"audit_id": "a0293", "question": "What is 21 - 19? Answer with only the number.", "accepted_answers": ["2"], "output": "21 - 19 = 10"}
+{"audit_id": "a0294", "question": "What is the capital of Papua New Guinea? Answer with only the city name.", "accepted_answers": ["Port Moresby"], "output": "Papua New Guinea's capital is Port Moresby."}
+{"audit_id": "a0295", "question": "What is the capital of Colombia? Answer with only the city name.", "accepted_answers": ["Bogota"], "output": "The capital of Colombia is Bogotá."}
+{"audit_id": "a0296", "question": "Which number is larger, 76 or 37? Answer with only the number.", "accepted_answers": ["76"], "output": "176"}
+{"audit_id": "a0297", "question": "Which number is larger, 77 or 18? Answer with only the number.", "accepted_answers": ["77"], "output": "18"}
+{"audit_id": "a0298", "question": "What is 78 - 42? Answer with only the number.", "accepted_answers": ["36"], "output": "78 - 42 = 30"}
+{"audit_id": "a0299", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the game; it was excellent.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0300", "question": "Which number is larger, 76 or 43? Answer with only the number.", "accepted_answers": ["76"], "output": "1"}
+{"audit_id": "a0301", "question": "Is this review positive or negative?\nReview: \"The hotel room was dreadful.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0302", "question": "What is the capital of Uzbekistan? Answer with only the city name.", "accepted_answers": ["Tashkent"], "output": "Bashkortost."}
+{"audit_id": "a0303", "question": "What is the opposite of the word \"dark\"? Answer with one word.", "accepted_answers": ["light", "bright"], "output": "Light."}
+{"audit_id": "a0304", "question": "What is the capital of Fiji? Answer with only the city name.", "accepted_answers": ["Suva"], "output": "Fiji"}
+{"audit_id": "a0305", "question": "Which number is larger, 35 or 37? Answer with only the number.", "accepted_answers": ["37"], "output": "37"}
+{"audit_id": "a0306", "question": "Which number is larger, 76 or 43? Answer with only the number.", "accepted_answers": ["76"], "output": "76."}
+{"audit_id": "a0307", "question": "What is 97 - 49? Answer with only the number.", "accepted_answers": ["48"], "output": "97 - 49 = 48"}
+{"audit_id": "a0308", "question": "Which number is larger, 62 or 57? Answer with only the number.", "accepted_answers": ["62"], "output": "1000000000000000"}
+{"audit_id": "a0309", "question": "What is the opposite of the word \"agree\"? Answer with one word.", "accepted_answers": ["disagree"], "output": "The opposite of \"agree\" is \"disagree\"."}
+{"audit_id": "a0310", "question": "Which number is smaller, 29 or 10? Answer with only the number.", "accepted_answers": ["10"], "output": "10"}
+{"audit_id": "a0311", "question": "Which number is larger, 66 or 41? Answer with only the number.", "accepted_answers": ["66"], "output": "1000000000000000"}
+{"audit_id": "a0312", "question": "What is 52 - 29? Answer with only the number.", "accepted_answers": ["23"], "output": "52"}
+{"audit_id": "a0313", "question": "Which number is smaller, 22 or 19? Answer with only the number.", "accepted_answers": ["19"], "output": "22"}
+{"audit_id": "a0314", "question": "What is the capital of Slovenia? Answer with only the city name.", "accepted_answers": ["Ljubljana"], "output": "Slovenia's capital is Ljubljana, which is located"}
+{"audit_id": "a0315", "question": "Is this review positive or negative?\nReview: \"The movie was not brilliant at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0316", "question": "Which number is smaller, 90 or 44? Answer with only the number.", "accepted_answers": ["44"], "output": "90"}
+{"audit_id": "a0317", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the haircut; it was lovely.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0318", "question": "Which number is larger, 28 or 54? Answer with only the number.", "accepted_answers": ["54"], "output": "28 is larger than 54."}
+{"audit_id": "a0319", "question": "What is 82 - 74? Answer with only the number.", "accepted_answers": ["8"], "output": "82 - 74 = 8"}
+{"audit_id": "a0320", "question": "Is this review positive or negative?\nReview: \"The camera was poor.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0321", "question": "What is 26 + 96? Answer with only the number.", "accepted_answers": ["122"], "output": "26 + 96 = 122"}
+{"audit_id": "a0322", "question": "Which number is smaller, 48 or 79? Answer with only the number.", "accepted_answers": ["48"], "output": "1000000000000000"}
+{"audit_id": "a0323", "question": "What is 88 - 27? Answer with only the number.", "accepted_answers": ["61"], "output": "88 - 27 = 61"}
+{"audit_id": "a0324", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the camera; it was perfect.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0325", "question": "Is this review positive or negative?\nReview: \"The staff was disappointing.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "Positive"}
+{"audit_id": "a0326", "question": "What is the capital of Ethiopia? Answer with only the city name.", "accepted_answers": ["Addis Ababa"], "output": "Ethiopia's capital is Addis Ababa."}
+{"audit_id": "a0327", "question": "Which number is smaller, 50 or 67? Answer with only the number.", "accepted_answers": ["50"], "output": "1000000000000000"}
+{"audit_id": "a0328", "question": "What is 87 + 70? Answer with only the number.", "accepted_answers": ["157"], "output": "87 + 70 = 157"}
+{"audit_id": "a0329", "question": "What is the capital of Guinea? Answer with only the city name.", "accepted_answers": ["Conakry"], "output": "The capital of Guinea is Conakry."}
+{"audit_id": "a0330", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the staff; it was superb.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0331", "question": "What is the opposite of the word \"success\"? Answer with one word.", "accepted_answers": ["failure"], "output": "Successor."}
+{"audit_id": "a0332", "question": "What is 59 - 24? Answer with only the number.", "accepted_answers": ["35"], "output": "59 - 24 = 35"}
+{"audit_id": "a0333", "question": "What is the opposite of the word \"deep\"? Answer with one word.", "accepted_answers": ["shallow"], "output": "\"Shallow.\""}
+{"audit_id": "a0334", "question": "What is the capital of Somalia? Answer with only the city name.", "accepted_answers": ["Mogadishu"], "output": "The capital of Somalia is Mogadishu."}
+{"audit_id": "a0335", "question": "What is the opposite of the word \"smooth\"? Answer with one word.", "accepted_answers": ["rough", "bumpy"], "output": "\"rough\""}
+{"audit_id": "a0336", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the game; it was excellent.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0337", "question": "Which number is larger, 86 or 44? Answer with only the number.", "accepted_answers": ["86"], "output": "1000000000000000"}
+{"audit_id": "a0338", "question": "What is 77 - 15? Answer with only the number.", "accepted_answers": ["62"], "output": "77 - 15 = 62"}
+{"audit_id": "a0339", "question": "Is this review positive or negative?\nReview: \"The haircut was not great at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0340", "question": "Which number is smaller, 33 or 28? Answer with only the number.", "accepted_answers": ["28"], "output": "33"}
+{"audit_id": "a0341", "question": "What is 93 - 82? Answer with only the number.", "accepted_answers": ["11"], "output": "93"}
+{"audit_id": "a0342", "question": "Is this review positive or negative?\nReview: \"The camera was useless.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0343", "question": "Which number is larger, 28 or 17? Answer with only the number.", "accepted_answers": ["28"], "output": "28."}
+{"audit_id": "a0344", "question": "What is the opposite of the word \"possible\"? Answer with one word.", "accepted_answers": ["impossible"], "output": "Unpossible."}
+{"audit_id": "a0345", "question": "What is the capital of Colombia? Answer with only the city name.", "accepted_answers": ["Bogota"], "output": "Cartagena"}
+{"audit_id": "a0346", "question": "What is 58 - 50? Answer with only the number.", "accepted_answers": ["8"], "output": "58 - 50 = 8"}
+{"audit_id": "a0347", "question": "Which number is smaller, 95 or 97? Answer with only the number.", "accepted_answers": ["95"], "output": "95."}
+{"audit_id": "a0348", "question": "What is 83 - 79? Answer with only the number.", "accepted_answers": ["4"], "output": "83 - 79 = 4"}
+{"audit_id": "a0349", "question": "Is this review positive or negative?\nReview: \"The haircut was not great at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0350", "question": "Is this review positive or negative?\nReview: \"The phone was not perfect at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0351", "question": "Is this review positive or negative?\nReview: \"The hotel room was not outstanding at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0352", "question": "What is the opposite of the word \"win\"? Answer with one word.", "accepted_answers": ["lose"], "output": "\"lose\""}
+{"audit_id": "a0353", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the app; it was lovely.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0354", "question": "Is this review positive or negative?\nReview: \"The book was not lovely at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0355", "question": "Which number is smaller, 59 or 93? Answer with only the number.", "accepted_answers": ["59"], "output": "59."}
+{"audit_id": "a0356", "question": "What is the opposite of the word \"sharp\"? Answer with one word.", "accepted_answers": ["dull", "blunt"], "output": "The opposite of \"sharp\" is \"dull\"."}
+{"audit_id": "a0357", "question": "Is this review positive or negative?\nReview: \"The haircut was not amazing at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0358", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the staff; it was amazing.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0359", "question": "What is the capital of Portugal? Answer with only the city name.", "accepted_answers": ["Lisbon"], "output": "Porto"}
+{"audit_id": "a0360", "question": "Which number is smaller, 56 or 14? Answer with only the number.", "accepted_answers": ["14"], "output": "56."}
+{"audit_id": "a0361", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the hotel room; it was great.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0362", "question": "Is this review positive or negative?\nReview: \"The game was not superb at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0363", "question": "Is this review positive or negative?\nReview: \"The phone was not perfect at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0364", "question": "What is the capital of Azerbaijan? Answer with only the city name.", "accepted_answers": ["Baku"], "output": "Azerbaijan"}
+{"audit_id": "a0365", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the camera; it was wonderful.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0366", "question": "What is the capital of Serbia? Answer with only the city name.", "accepted_answers": ["Belgrade"], "output": "The capital of Serbia is Belgrade."}
+{"audit_id": "a0367", "question": "Is this review positive or negative?\nReview: \"The flight was not fantastic at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0368", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the coffee; it was superb.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0369", "question": "Is this review positive or negative?\nReview: \"The hotel room was not lovely at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0370", "question": "Which number is larger, 39 or 81? Answer with only the number.", "accepted_answers": ["81"], "output": "39."}
+{"audit_id": "a0371", "question": "What is the capital of Turkmenistan? Answer with only the city name.", "accepted_answers": ["Ashgabat"], "output": "Bashkert"}
+{"audit_id": "a0372", "question": "Is this review positive or negative?\nReview: \"The concert was not excellent at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0373", "question": "What is the opposite of the word \"success\"? Answer with one word.", "accepted_answers": ["failure"], "output": "Failure"}
+{"audit_id": "a0374", "question": "What is the capital of Armenia? Answer with only the city name.", "accepted_answers": ["Yerevan"], "output": "Armenia's capital is Yerevan."}
+{"audit_id": "a0375", "question": "Which number is smaller, 59 or 93? Answer with only the number.", "accepted_answers": ["59"], "output": "93"}
+{"audit_id": "a0376", "question": "What is the opposite of the word \"maximum\"? Answer with one word.", "accepted_answers": ["minimum"], "output": "One opposite of the word \"maximum\" is \"minimum\"."}
+{"audit_id": "a0377", "question": "What is the capital of Portugal? Answer with only the city name.", "accepted_answers": ["Lisbon"], "output": "The capital of Portugal is Lisbon."}
+{"audit_id": "a0378", "question": "What is the opposite of the word \"floor\"? Answer with one word.", "accepted_answers": ["ceiling"], "output": "Up"}
+{"audit_id": "a0379", "question": "Which number is smaller, 54 or 13? Answer with only the number.", "accepted_answers": ["13"], "output": "13"}
+{"audit_id": "a0380", "question": "Is this review positive or negative?\nReview: \"The delivery was disappointing.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0381", "question": "What is the capital of North Macedonia? Answer with only the city name.", "accepted_answers": ["Skopje"], "output": "The capital of North Macedonia is Skopje."}
+{"audit_id": "a0382", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the camera; it was perfect.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0383", "question": "Is this review positive or negative?\nReview: \"The haircut was superb.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "Positive"}
+{"audit_id": "a0384", "question": "What is the capital of the Democratic Republic of the Congo? Answer with only the city name.", "accepted_answers": ["Kinshasa"], "output": "The capital of the Democratic Republic of the Congo is Brazzaville."}
+{"audit_id": "a0385", "question": "What is 92 - 56? Answer with only the number.", "accepted_answers": ["36"], "output": "92"}
+{"audit_id": "a0386", "question": "What is the capital of Myanmar? Answer with only the city name.", "accepted_answers": ["Naypyidaw", "Nay Pyi Taw", "Naypyitaw"], "output": "Myanmar is located in the eastern part of the country."}
+{"audit_id": "a0387", "question": "What is the capital of Brazil? Answer with only the city name.", "accepted_answers": ["Brasilia"], "output": "São Paulo"}
+{"audit_id": "a0388", "question": "Which number is larger, 52 or 23? Answer with only the number.", "accepted_answers": ["52"], "output": "23"}
+{"audit_id": "a0389", "question": "Which number is smaller, 50 or 18? Answer with only the number.", "accepted_answers": ["18"], "output": "18"}
+{"audit_id": "a0390", "question": "Which number is larger, 76 or 30? Answer with only the number.", "accepted_answers": ["76"], "output": "1000000000000000"}
+{"audit_id": "a0391", "question": "Which number is smaller, 33 or 28? Answer with only the number.", "accepted_answers": ["28"], "output": "28"}
+{"audit_id": "a0392", "question": "What is the opposite of the word \"first\"? Answer with one word.", "accepted_answers": ["last"], "output": "Second."}
+{"audit_id": "a0393", "question": "What is 34 - 24? Answer with only the number.", "accepted_answers": ["10"], "output": "34 - 24 = 10"}
+{"audit_id": "a0394", "question": "Which number is smaller, 99 or 27? Answer with only the number.", "accepted_answers": ["27"], "output": "99."}
+{"audit_id": "a0395", "question": "Which number is larger, 62 or 57? Answer with only the number.", "accepted_answers": ["62"], "output": "62"}
+{"audit_id": "a0396", "question": "Which number is larger, 78 or 62? Answer with only the number.", "accepted_answers": ["78"], "output": "78"}
+{"audit_id": "a0397", "question": "Is this review positive or negative?\nReview: \"The phone was not superb at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0398", "question": "Which number is smaller, 67 or 29? Answer with only the number.", "accepted_answers": ["29"], "output": "67"}
+{"audit_id": "a0399", "question": "Which number is smaller, 29 or 10? Answer with only the number.", "accepted_answers": ["10"], "output": "29."}
+{"audit_id": "a0400", "question": "Is this review positive or negative?\nReview: \"The app was not wonderful at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0401", "question": "Is this review positive or negative?\nReview: \"The movie was not brilliant at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0402", "question": "What is the capital of Zambia? Answer with only the city name.", "accepted_answers": ["Lusaka"], "output": "The capital of Zambia is Lusaka."}
+{"audit_id": "a0403", "question": "Is this review positive or negative?\nReview: \"The hotel room was not outstanding at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0404", "question": "What is the capital of Ethiopia? Answer with only the city name.", "accepted_answers": ["Addis Ababa"], "output": "Ababa"}
+{"audit_id": "a0405", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the concert; it was amazing.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0406", "question": "What is the capital of Senegal? Answer with only the city name.", "accepted_answers": ["Dakar"], "output": "The capital of Senegal is Dakar."}
+{"audit_id": "a0407", "question": "What is the capital of Uzbekistan? Answer with only the city name.", "accepted_answers": ["Tashkent"], "output": "The capital of Uzbekistan is Tashkent"}
+{"audit_id": "a0408", "question": "What is the capital of Belarus? Answer with only the city name.", "accepted_answers": ["Minsk"], "output": "Moscow"}
+{"audit_id": "a0409", "question": "What is 22 + 57? Answer with only the number.", "accepted_answers": ["79"], "output": "22 + 57 = 89"}
+{"audit_id": "a0410", "question": "Which number is larger, 85 or 80? Answer with only the number.", "accepted_answers": ["85"], "output": "85."}
+{"audit_id": "a0411", "question": "Which number is larger, 69 or 12? Answer with only the number.", "accepted_answers": ["69"], "output": "69."}
+{"audit_id": "a0412", "question": "What is the capital of Mali? Answer with only the city name.", "accepted_answers": ["Bamako"], "output": "The capital of Mali is Bamako."}
+{"audit_id": "a0413", "question": "What is the opposite of the word \"correct\"? Answer with one word.", "accepted_answers": ["incorrect", "wrong"], "output": "The opposite of \"correct\" is \"incorrect\"."}
+{"audit_id": "a0414", "question": "What is the opposite of the word \"arrive\"? Answer with one word.", "accepted_answers": ["depart", "leave"], "output": "The opposite of \"arrive\" is \"disappear\"."}
+{"audit_id": "a0415", "question": "What is 72 - 61? Answer with only the number.", "accepted_answers": ["11"], "output": "72 - 61 = 11"}
+{"audit_id": "a0416", "question": "What is the capital of Papua New Guinea? Answer with only the city name.", "accepted_answers": ["Port Moresby"], "output": "Papua New Guinea is Port Harcourt."}
+{"audit_id": "a0417", "question": "What is the capital of New Zealand? Answer with only the city name.", "accepted_answers": ["Wellington"], "output": "The capital of New Zealand is Wellington."}
+{"audit_id": "a0418", "question": "What is the capital of Madagascar? Answer with only the city name.", "accepted_answers": ["Antananarivo"], "output": "The capital of Madagascar is Antananarivo."}
+{"audit_id": "a0419", "question": "Which number is smaller, 86 or 34? Answer with only the number.", "accepted_answers": ["34"], "output": "86"}
+{"audit_id": "a0420", "question": "What is the capital of Poland? Answer with only the city name.", "accepted_answers": ["Warsaw"], "output": "Warsaw"}
+{"audit_id": "a0421", "question": "What is the opposite of the word \"wide\"? Answer with one word.", "accepted_answers": ["narrow"], "output": "The opposite of \"wide\" is \"narrow\"."}
+{"audit_id": "a0422", "question": "Which number is smaller, 56 or 14? Answer with only the number.", "accepted_answers": ["14"], "output": "14"}
+{"audit_id": "a0423", "question": "What is the opposite of the word \"maximum\"? Answer with one word.", "accepted_answers": ["minimum"], "output": "Minus."}
+{"audit_id": "a0424", "question": "What is 64 - 13? Answer with only the number.", "accepted_answers": ["51"], "output": "64 - 13 = 51"}
+{"audit_id": "a0425", "question": "What is 68 + 66? Answer with only the number.", "accepted_answers": ["134"], "output": "68 + 66 = 134"}
+{"audit_id": "a0426", "question": "Is this review positive or negative?\nReview: \"The book was not lovely at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "positive"}
+{"audit_id": "a0427", "question": "What is the opposite of the word \"always\"? Answer with one word.", "accepted_answers": ["never"], "output": "Unpredictable."}
+{"audit_id": "a0428", "question": "What is the capital of Vietnam? Answer with only the city name.", "accepted_answers": ["Hanoi"], "output": "Hanoi"}
+{"audit_id": "a0429", "question": "What is the opposite of the word \"appear\"? Answer with one word.", "accepted_answers": ["disappear", "vanish"], "output": "Inverse."}
+{"audit_id": "a0430", "question": "What is 51 - 12? Answer with only the number.", "accepted_answers": ["39"], "output": "51"}
+{"audit_id": "a0431", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the game; it was lovely.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0432", "question": "What is the capital of Sierra Leone? Answer with only the city name.", "accepted_answers": ["Freetown"], "output": "Monrovia"}
+{"audit_id": "a0433", "question": "What is 15 - 10? Answer with only the number.", "accepted_answers": ["5"], "output": "15 - 10 = 5"}
+{"audit_id": "a0434", "question": "What is the capital of Georgia? Answer with only the city name.", "accepted_answers": ["Tbilisi"], "output": "Tbilisi"}
+{"audit_id": "a0435", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the service; it was perfect.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0436", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the camera; it was excellent.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0437", "question": "What is the capital of Belgium? Answer with only the city name.", "accepted_answers": ["Brussels"], "output": "Bruges"}
+{"audit_id": "a0438", "question": "Is this review positive or negative?\nReview: \"The game was not fantastic at all.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0439", "question": "What is the capital of Haiti? Answer with only the city name.", "accepted_answers": ["Port-au-Prince"], "output": "The capital of Haiti is Port-au-Prince."}
+{"audit_id": "a0440", "question": "Which number is larger, 28 or 54? Answer with only the number.", "accepted_answers": ["54"], "output": "28."}
+{"audit_id": "a0441", "question": "What is the opposite of the word \"sharp\"? Answer with one word.", "accepted_answers": ["dull", "blunt"], "output": "\"flat\""}
+{"audit_id": "a0442", "question": "Is this review positive or negative?\nReview: \"The coffee was disappointing.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0443", "question": "Which number is smaller, 50 or 67? Answer with only the number.", "accepted_answers": ["50"], "output": "50."}
+{"audit_id": "a0444", "question": "Which number is smaller, 77 or 25? Answer with only the number.", "accepted_answers": ["25"], "output": "25"}
+{"audit_id": "a0445", "question": "Is this review positive or negative?\nReview: \"The delivery was terrible.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0446", "question": "What is the capital of Uruguay? Answer with only the city name.", "accepted_answers": ["Montevideo"], "output": "Montevideo"}
+{"audit_id": "a0447", "question": "Is this review positive or negative?\nReview: \"The staff was disappointing.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["negative"], "output": "The review is negative."}
+{"audit_id": "a0448", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the delivery; it was excellent.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0449", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the food; it was great.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0450", "question": "What is the opposite of the word \"honest\"? Answer with one word.", "accepted_answers": ["dishonest"], "output": "Lying."}
+{"audit_id": "a0451", "question": "Which number is larger, 69 or 12? Answer with only the number.", "accepted_answers": ["69"], "output": "12"}
+{"audit_id": "a0452", "question": "Which number is larger, 86 or 44? Answer with only the number.", "accepted_answers": ["86"], "output": "86"}
+{"audit_id": "a0453", "question": "Which number is larger, 72 or 50? Answer with only the number.", "accepted_answers": ["72"], "output": "72"}
+{"audit_id": "a0454", "question": "What is 60 + 79? Answer with only the number.", "accepted_answers": ["139"], "output": "60 + 79 = 139"}
+{"audit_id": "a0455", "question": "Which number is smaller, 35 or 87? Answer with only the number.", "accepted_answers": ["35"], "output": "35."}
+{"audit_id": "a0456", "question": "Which number is larger, 90 or 57? Answer with only the number.", "accepted_answers": ["90"], "output": "1000000000000000"}
+{"audit_id": "a0457", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the coffee; it was superb.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0458", "question": "What is the capital of Zimbabwe? Answer with only the city name.", "accepted_answers": ["Harare"], "output": "Zimbabwe"}
+{"audit_id": "a0459", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the game; it was lovely.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0460", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the delivery; it was perfect.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0461", "question": "Which number is smaller, 28 or 18? Answer with only the number.", "accepted_answers": ["18"], "output": "28"}
+{"audit_id": "a0462", "question": "What is the capital of Lithuania? Answer with only the city name.", "accepted_answers": ["Vilnius"], "output": "Kalinka"}
+{"audit_id": "a0463", "question": "Which number is larger, 78 or 48? Answer with only the number.", "accepted_answers": ["78"], "output": "78."}
+{"audit_id": "a0464", "question": "What is 41 - 16? Answer with only the number.", "accepted_answers": ["25"], "output": "41 - 16 = 25"}
+{"audit_id": "a0465", "question": "Which number is larger, 76 or 37? Answer with only the number.", "accepted_answers": ["76"], "output": "76."}
+{"audit_id": "a0466", "question": "What is the capital of Latvia? Answer with only the city name.", "accepted_answers": ["Riga"], "output": "The capital of Latvia is Riga."}
+{"audit_id": "a0467", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the service; it was superb.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0468", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the phone; it was fantastic.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "positive"}
+{"audit_id": "a0469", "question": "Is this review positive or negative?\nReview: \"I would happily recommend the hotel room; it was great.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "negative"}
+{"audit_id": "a0470", "question": "What is 85 + 43? Answer with only the number.", "accepted_answers": ["128"], "output": "85 + 43 = 132"}
+{"audit_id": "a0471", "question": "Is this review positive or negative?\nReview: \"The staff was wonderful.\"\nAnswer with only one word: positive or negative.", "accepted_answers": ["positive"], "output": "Positive"}

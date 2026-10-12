@@ -5,7 +5,9 @@
 1. **How fast this device runs AI.** An instant GPU score with no download, then an opt-in full test: load time, time to first token, prompt reading speed and generation speed.
 2. **What compressing the model costs.** 4-bit vs. full precision: how much speed it buys, how much answer accuracy it loses, and whether different devices give the same answers.
 
-> Status: speed harness live at **https://yashkamerkar14.github.io/mettle/**. Quality evaluation: question set, reference runner and analysis built; pilot done; full run pending the freeze of [the analysis plan](docs/analysis-plan.md). Public leaderboard next.
+> **First result** ([findings](docs/findings.md)): on 500 questions, 4-bit compression did not change how often SmolLM2-360M got the answer right (−0.4 points, 95% CI −5.8 to +5.0), but it cut how often the model followed "answer with only …" from 48% to 9%. It lost 19 points on arithmetic and gained 21 on capitals. The analysis was [pre-registered](docs/analysis-plan.md) and frozen before the run, and the scorer was checked by a blinded audit.
+>
+> Live at **https://yashkamerkar14.github.io/mettle/**. Next: speed ratio, the in-browser consistency check, and the public leaderboard.
 
 ## What's mine vs. what's a library
 
