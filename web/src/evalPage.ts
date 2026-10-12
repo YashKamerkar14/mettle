@@ -24,6 +24,16 @@ const api = {
     for (const q of questions) out.push(await answerQuestion(host.current, q))
     return out
   },
+  // The site's own speed harness (warm-up + timed runs), on the same engine.
+  // Imported dynamically, as in App.tsx: a static import from this entry made
+  // the bundler merge the harness into the main entry chunk, which then ran
+  // the main page's start-up code here.
+  speed: async (modelId: string) => {
+    const build = MODEL_BUILDS.find((b) => b.id === modelId)
+    if (!build) throw new Error(`Unknown build ${modelId}`)
+    const { SpeedHarness } = await import('./bench/harness')
+    return new SpeedHarness(host).runSpeedTest(build)
+  },
   unload: () => host.dispose(),
 }
 

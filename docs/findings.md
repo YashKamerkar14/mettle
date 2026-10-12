@@ -4,7 +4,7 @@ Model: SmolLM2-360M-Instruct, WebLLM 0.2.86, 500 questions (`eval/questions/ques
 
 ## Headline
 
-> **Compressing to 4-bit did not change how often the answer was right (−0.4 points, 95% CI −5.8 to +5.0), but it cut how often the model followed "answer with only …" from 48.0% to 8.6% (−39.4 points, 95% CI −44.4 to −34.4).**
+> **Compressing to 4-bit made no measurable difference to how often the answer was right (−0.4 points, 95% CI −5.8 to +5.0), but it cut how often the model followed "answer with only …" from 48.0% to 8.6% (−39.4 points, 95% CI −44.4 to −34.4).**
 
 Under the pre-registered reading, the accuracy result is **inconclusive**, not "equivalent". The 90% CI (−5.0 to +4.0) touches the ±5-point margin, so equivalence can't be claimed at this sample size.
 

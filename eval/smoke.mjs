@@ -1,8 +1,9 @@
 // End-to-end smoke test: open the built site in real Chrome with WebGPU,
-// run the instant score, then (with --full) the full 4-bit speed test.
+// run the instant score, then (with --full) the 4-bit speed test and answer
+// check, and (with --compare) the full-precision run and comparison.
 //
 //   cd web && npm run build && npx vite preview --port 4173
-//   node eval/smoke.mjs [--full] [--dgpu] [--headed] [--url http://localhost:4173]
+//   node eval/smoke.mjs [--full [--compare]] [--dgpu] [--headed] [--url http://localhost:4173]
 //
 // Uses a persistent profile under eval/.profile so the model download is
 // cached between runs.
@@ -42,17 +43,29 @@ try {
   console.log('Instant:', (await instant.innerText()).replace(/\n/g, ' | '))
 
   if (full) {
-    const started = Date.now()
+    const section = page.locator('section', { hasText: 'Full test' })
+    const waitFor = async (locator, label) => {
+      const started = Date.now()
+      await Promise.race([
+        locator.waitFor({ timeout: 15 * 60_000 }),
+        page.locator('.error').waitFor({ timeout: 15 * 60_000 }).then(async () => {
+          throw new Error(await page.locator('.error').innerText())
+        }),
+      ])
+      console.log(`${label} (${((Date.now() - started) / 1000).toFixed(0)} s)`)
+    }
+
     await page.getByRole('button', { name: /start full test/i }).click()
-    const result = page.locator('section', { hasText: 'Full test' }).locator('.result').first()
-    await Promise.race([
-      result.waitFor({ timeout: 15 * 60_000 }),
-      page.locator('.error').waitFor({ timeout: 15 * 60_000 }).then(async () => {
-        throw new Error(await page.locator('.error').innerText())
-      }),
-    ])
-    console.log(`Full test (${((Date.now() - started) / 1000).toFixed(0)} s):`)
-    console.log(await result.locator('.big, table, p.muted').allInnerTexts().then((t) => t.join('\n')))
+    await waitFor(section.getByText(/Answers match the reference/).first(), '4-bit speed + answer check')
+    const lines = await section.locator('.result').first().locator('.big, table, .check p').allInnerTexts()
+    console.log(lines.join('\n'))
+
+    if (args.includes('--compare')) {
+      await page.getByRole('button', { name: /run full precision/i }).click()
+      await waitFor(section.locator('.comparison'), 'Full precision + comparison')
+      console.log((await section.locator('.check p strong').allInnerTexts()).join('\n'))
+      console.log(await section.locator('.comparison').innerText())
+    }
   }
 } finally {
   await context.close()

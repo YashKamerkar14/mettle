@@ -213,3 +213,23 @@ details {
     font-size: 0.8rem;
   }
 }
+
+.check {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+}
+
+.check p {
+  margin: 0 0 4px;
+}
+
+.comparison a {
+  color: var(--accent);
+}
+
+.result h3 {
+  margin-bottom: 4px;
+}
