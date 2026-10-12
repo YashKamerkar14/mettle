@@ -1,0 +1,9 @@
+{
+  "name": "mettle-eval",
+  "scripts": {},
+  "type": "module",
+  "private": "true",
+  "devDependencies": {
+    "playwright": "^1.64.0"
+  }
+}

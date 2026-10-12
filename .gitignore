@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+.env*
+!.env.example
+
+# Playwright's persistent Chrome profile (holds the cached model files)
+eval/.profile/
