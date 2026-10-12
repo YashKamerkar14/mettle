@@ -7,6 +7,8 @@ const webllm = JSON.parse(readFileSync(new URL('./node_modules/@mlc-ai/web-llm/p
 
 // https://vite.dev/config/
 export default defineConfig({
+  // GitHub Pages serves from /<repo>/; Vercel or Cloudflare would serve from /.
+  base: process.env.VITE_BASE ?? '/',
   plugins: [react()],
   define: {
     __WEBLLM_VERSION__: JSON.stringify(webllm.version),
