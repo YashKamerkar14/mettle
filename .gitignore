@@ -4,6 +4,8 @@ dist/
 .DS_Store
 .env*
 !.env.example
+!web/.env.production
+!web/.env.development
 
 # Playwright's persistent Chrome profile (holds the cached model files)
 eval/.profile/

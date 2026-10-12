@@ -1,0 +1,6 @@
+# Only the settings this project relies on; everything else uses Supabase defaults.
+project_id = "pwgtdyhlmksgxlummukd"
+
+[functions.submit]
+# Visitors are anonymous; the function checks Turnstile and rate limits itself.
+verify_jwt = false

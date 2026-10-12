@@ -7,6 +7,7 @@ import type { Summary } from './bench/stats'
 import { Sparkline } from './components/Sparkline'
 import { SPEED_MAX_TOKENS } from './bench/prompt'
 import { runConsistencyCheck, type ConsistencyResult } from './quality/consistency'
+import { SubmitPanel } from './leaderboard/SubmitPanel'
 
 type Busy = null | 'instant' | 'full' | 'sustained'
 type UiPhase = Phase | 'check'
@@ -193,6 +194,9 @@ export default function App() {
             )}
 
             {r4 && <BuildResultView result={r4} />}
+            {r4?.check && (
+              <SubmitPanel device={device} instant={instant} speed={r4.speed} check={r4.check} label="4-bit" />
+            )}
 
             {r4?.check && (
               <div className="result">
@@ -208,6 +212,9 @@ export default function App() {
             )}
 
             {r0 && <BuildResultView result={r0} />}
+            {r0?.check && (
+              <SubmitPanel device={device} instant={instant} speed={r0.speed} check={r0.check} label="full-precision" />
+            )}
             {r4 && r0 && <Comparison q4={r4} q0={r0} />}
 
             {(r4 || r0) && (
