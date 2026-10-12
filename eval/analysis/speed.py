@@ -2,6 +2,11 @@
 
     python eval/analysis/speed.py --results eval/results/speed-v1
 
+Only valid sessions count: on AC power before and after the run (flagged by
+eval/speed.mjs), and not listed in excluded.json in the results directory,
+which records exclusions with reasons for sessions run before the runner
+checked power afterwards.
+
 Per session: median 4-bit decode tok/s over its timed runs (both A blocks)
 divided by the same for full precision (both B blocks). Across sessions:
 geometric mean of the ratios with a t-interval on the log ratios. Prefill is
@@ -43,7 +48,13 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--results", type=Path, required=True)
     args = ap.parse_args()
-    sessions = [json.loads(l) for l in (args.results / "sessions.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
+    recorded = [json.loads(l) for l in (args.results / "sessions.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
+    excluded_path = args.results / "excluded.json"
+    excluded = json.loads(excluded_path.read_text(encoding="utf-8")) if excluded_path.exists() else {}
+    for s in recorded:
+        if s.get("valid") is False and str(s["session"]) not in excluded:
+            excluded[str(s["session"])] = "power changed during the run (flagged by the runner)"
+    sessions = [s for s in recorded if str(s["session"]) not in excluded]
 
     md = [
         "# Speed: 4-bit vs full precision",
@@ -53,6 +64,11 @@ def main() -> None:
         + ", ".join(sorted({s['power']['scheme'] for s in sessions}))
         + ".",
         "",
+        *(
+            ["Excluded: " + "; ".join(f"session {k}: {v}" for k, v in sorted(excluded.items(), key=lambda kv: int(kv[0]))) + ".", ""]
+            if excluded
+            else []
+        ),
         "| Session | 4-bit decode | Full decode | Decode ratio | Prefill ratio |",
         "| --- | --- | --- | --- | --- |",
     ]

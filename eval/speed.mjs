@@ -2,10 +2,12 @@
 // reference device, each a fresh browser launch after an idle wait, running
 // the site's speed harness in ABBA order (q4f16_1, q0f16, q0f16, q4f16_1).
 //
-//   node eval/speed.mjs --out eval/results/speed-v1 [--sessions 10] [--idle-min 5] [--dgpu]
+//   node eval/speed.mjs --out eval/results/speed-v1 [--sessions 10] [--session-start 1] [--idle-min 5] [--dgpu]
 //
 // Weights must already be cached in eval/.profile (the reference run does that).
-// Each session appends one line to sessions.jsonl. Refuses to run on battery.
+// Each session appends one line to sessions.jsonl. Power is read right before
+// and right after each session; a session is valid only if the laptop was on
+// AC power at both points. On battery, the runner waits for AC before idling.
 
 import { execSync, spawn } from 'node:child_process'
 import { appendFileSync, mkdirSync } from 'node:fs'
@@ -18,6 +20,7 @@ const args = parseArgs(process.argv.slice(2))
 const outDir = resolve(args.out ?? join(here, 'results/speed-v1'))
 const sessions = Number(args.sessions ?? 10)
 const idleMin = Number(args['idle-min'] ?? 5)
+const sessionStart = Number(args['session-start'] ?? 1)
 const ORDER = ['q4f16_1', 'q0f16', 'q0f16', 'q4f16_1']
 
 mkdirSync(outDir, { recursive: true })
@@ -31,11 +34,19 @@ const baseUrl = `http://localhost:${port}/`
 
 try {
   await waitForServer(baseUrl)
-  for (let s = 1; s <= sessions; s++) {
-    const power = readPower()
-    if (!power.onAC) throw new Error('Laptop is on battery; the protocol requires AC power.')
-    log(`session ${s}/${sessions}: idle ${idleMin} min (${power.scheme})`)
+  for (let s = sessionStart; s < sessionStart + sessions; s++) {
+    while (!readPower().onAC) {
+      log('on battery: waiting for AC power (the protocol requires it)')
+      await sleep(30_000)
+    }
+    log(`session ${s}: idle ${idleMin} min (${readPower().scheme})`)
     await sleep(idleMin * 60_000)
+    const powerBefore = readPower()
+    if (!powerBefore.onAC) {
+      log('power was unplugged during the idle wait; restarting this session')
+      s--
+      continue
+    }
 
     const context = await chromium.launchPersistentContext(join(here, '.profile'), {
       channel: 'chrome',
@@ -63,9 +74,21 @@ try {
         blocks.push({ build: short, ...r })
         log(`  ${short}: decode ${r.decodeTokPerSec.median.toFixed(1)} tok/s, prefill ${r.prefillTokPerSec.median.toFixed(0)} tok/s${r.cacheHit ? '' : ' (NOT cached)'}`)
       }
+      const powerAfter = readPower()
+      const valid = powerBefore.onAC && powerAfter.onAC && powerBefore.scheme === powerAfter.scheme
+      if (!valid) log(`  session ${s} INVALID: power changed during the run`)
       appendFileSync(
         join(outDir, 'sessions.jsonl'),
-        JSON.stringify({ session: s, startedAt: new Date().toISOString(), power, device: info.device, runtimeVersion: info.runtimeVersion, blocks }) + '\n',
+        JSON.stringify({
+          session: s,
+          startedAt: new Date().toISOString(),
+          valid,
+          power: powerBefore,
+          powerAfter,
+          device: info.device,
+          runtimeVersion: info.runtimeVersion,
+          blocks,
+        }) + '\n',
       )
     } finally {
       await context.close()
